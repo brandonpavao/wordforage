@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Infinite Connections</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <main class="outer">
+    <section class="gameArea" id="gameArea">
+      <div class="header">
+        <div class="logoWrap" id="logoWrap">
+          <img id="logoImg" class="logo" src="logo.png" alt="Infinite Connections logo" />
+        </div>
+        <div class="title">INFINITE CONNECTIONS</div>
+      </div>
+
+      <div class="status" id="status">Loading puzzles...</div>
+
+      <div class="scoreLives">
+        <div class="score" id="score">Score: 0</div>
+        <div class="lives" id="lives"></div>
+      </div>
+
+      <div class="solved" id="solved"></div>
+
+      <div class="grid" id="grid"></div>
+
+      <div class="controls">
+        <button class="btn" id="submitBtn">Submit</button>
+        <button class="btn" id="clearBtn">Clear</button>
+        <button class="btn" id="nextBtn">Next</button>
+      </div>
+
+      <div class="flash" id="flash"></div>
+      <div class="toast" id="toast"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

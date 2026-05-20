@@ -1,0 +1,2259 @@
+[
+  {
+    "groups": [
+      {
+        "name": "COURT PAPERS",
+        "tier": 1,
+        "words": ["APPEAL", "BRIEF", "MOTION", "SUMMONS"]
+      },
+      {
+        "name": "KEYBOARD KEYS",
+        "tier": 2,
+        "words": ["SHIFT", "SPACE", "TAB", "RETURN"]
+      },
+      {
+        "name": "CAN BE DRAWN",
+        "tier": 3,
+        "words": ["SWORD", "BOW", "CARD", "CURTAIN"]
+      },
+      {
+        "name": "HETERONYMS",
+        "tier": 4,
+        "words": ["LEAD", "TEAR", "WIND", "ROW"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BREW / MAKE",
+        "tier": 1,
+        "words": ["DRIP", "PRESS", "FILTER", "ROAST"]
+      },
+      {
+        "name": "BASEBALL CALLS",
+        "tier": 2,
+        "words": ["BALL", "STRIKE", "SAFE", "OUT"]
+      },
+      {
+        "name": "COMPUTER STORAGE",
+        "tier": 3,
+        "words": ["CACHE", "DRIVE", "FOLDER", "RAM"]
+      },
+      {
+        "name": "SILENT LETTERS",
+        "tier": 4,
+        "words": ["KNEE", "ISLAND", "WRIST", "PSALM"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BRAND ICONS",
+        "tier": 1,
+        "words": ["CHECK", "SIREN", "APPLE", "SHELL"]
+      },
+      {
+        "name": "CAMPUS LIFE",
+        "tier": 2,
+        "words": ["MAJOR", "LECTURE", "FINAL", "STUDY"]
+      },
+      {
+        "name": "OFTEN FRAMED",
+        "tier": 3,
+        "words": ["PHOTO", "ART", "CERTIFICATE", "SUSPECT"]
+      },
+      {
+        "name": "TYPES OF WATER",
+        "tier": 4,
+        "words": ["SPRING", "VITAMIN", "SALT", "BOTTLE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PAYMENT TERMS",
+        "tier": 1,
+        "words": ["CASH", "CREDIT", "TAP", "TIP"]
+      },
+      {
+        "name": "MUSIC NOTATION",
+        "tier": 2,
+        "words": ["BASS", "CLEF", "KEY", "REST"]
+      },
+      {
+        "name": "CAN BE SET",
+        "tier": 3,
+        "words": ["TABLE", "TRAP", "ALARM", "RECORD"]
+      },
+      {
+        "name": "SHADE WORDS",
+        "tier": 1,
+        "words": ["NAVY", "OLIVE", "RUST", "SAGE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "DOG BREEDS",
+        "tier": 1,
+        "words": ["HOUND", "BOXER", "TERRIER", "HUSKY"]
+      },
+      {
+        "name": "IN A CLASSROOM",
+        "tier": 2,
+        "words": ["TAPE", "CLOCK", "BOARD", "CHAIR"]
+      },
+      {
+        "name": "THINGS YOU CAN BREAK",
+        "tier": 3,
+        "words": ["CODE", "RECORD", "SILENCE", "ICE"]
+      },
+      {
+        "name": "HOMOPHONES SET",
+        "tier": 4,
+        "words": ["PAIR", "PARE", "PEAR", "PAYER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BOOK PARTS",
+        "tier": 1,
+        "words": ["COVER", "SPINE", "INDEX", "CHAPTER"]
+      },
+      {
+        "name": "BILLIARDS WORDS",
+        "tier": 2,
+        "words": ["CUE", "RACK", "BANK", "BREAK"]
+      },
+      {
+        "name": "CAN BE RUN",
+        "tier": 3,
+        "words": ["RACE", "SHOW", "PROGRAM", "BATH"]
+      },
+      {
+        "name": "ALSO COLORS",
+        "tier": 4,
+        "words": ["SAGE", "RUST", "PLUM", "TEAL"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "WEATHER WORDS",
+        "tier": 1,
+        "words": ["HAIL", "SLEET", "FOG", "GALE"]
+      },
+      {
+        "name": "AT A RESTAURANT",
+        "tier": 2,
+        "words": ["MENU", "SERVER", "BILL", "BOOTH"]
+      },
+      {
+        "name": "CARD GAME TERMS",
+        "tier": 3,
+        "words": ["DEAL", "HAND", "TRICK", "SUIT"]
+      },
+      {
+        "name": "TWO-SAME PLURALS",
+        "tier": 4,
+        "words": ["FISH", "DEER", "SHEEP", "MOOSE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "MATH OPERATORS",
+        "tier": 1,
+        "words": ["PLUS", "MINUS", "EQUALS", "TIMES"]
+      },
+      {
+        "name": "IN A TOOLBOX",
+        "tier": 2,
+        "words": ["WRENCH", "LEVEL", "DRILL", "PLIERS"]
+      },
+      {
+        "name": "CAN BE OPENED",
+        "tier": 3,
+        "words": ["CASE", "FILE", "TAB", "PORTAL"]
+      },
+      {
+        "name": "TWO PRONUNCIATIONS",
+        "tier": 4,
+        "words": ["LIVE", "READ", "WOUND", "CLOSE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "CAR PARTS",
+        "tier": 1,
+        "words": ["HOOD", "TRUNK", "TIRE", "BRAKE"]
+      },
+      {
+        "name": "ONLINE ACTIONS",
+        "tier": 2,
+        "words": ["LIKE", "SHARE", "POST", "STREAM"]
+      },
+      {
+        "name": "CAN BE CHARGED",
+        "tier": 3,
+        "words": ["PHONE", "BATTERY", "CARD", "CRIME"]
+      },
+      {
+        "name": "SPORTS VERBS",
+        "tier": 4,
+        "words": ["PITCH", "DRIVE", "SAVE", "DRAW"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "ANATOMY",
+        "tier": 1,
+        "words": ["RIB", "LUNG", "LIVER", "KNEE"]
+      },
+      {
+        "name": "PAPERWORK",
+        "tier": 2,
+        "words": ["FORM", "FILE", "COPY", "STAMP"]
+      },
+      {
+        "name": "KITCHEN TOOLS",
+        "tier": 3,
+        "words": ["WHISK", "TONGS", "SIEVE", "PEELER"]
+      },
+      {
+        "name": "HIDE A NUMBER",
+        "tier": 4,
+        "words": ["OFTEN", "ANYONE", "STONE", "LONELY"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "CHESS PIECES",
+        "tier": 1,
+        "words": ["KING", "QUEEN", "ROOK", "BISHOP"]
+      },
+      {
+        "name": "FASTENERS",
+        "tier": 2,
+        "words": ["BOLT", "NAIL", "SCREW", "RIVET"]
+      },
+      {
+        "name": "CAN BE PLAIN",
+        "tier": 3,
+        "words": ["YOGURT", "TEE", "BAGEL", "SPEECH"]
+      },
+      {
+        "name": "ALSO FIRST NAMES",
+        "tier": 4,
+        "words": ["ROSE", "JACK", "WILL", "GRACE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SMALL BIRDS",
+        "tier": 1,
+        "words": ["ROBIN", "WREN", "FINCH", "SWIFT"]
+      },
+      {
+        "name": "BANKING TERMS",
+        "tier": 2,
+        "words": ["LOAN", "RATE", "BRANCH", "VAULT"]
+      },
+      {
+        "name": "CAN BE PITCHED",
+        "tier": 3,
+        "words": ["TENT", "IDEA", "BALL", "VOICE"]
+      },
+      {
+        "name": "CONTRONYMS",
+        "tier": 4,
+        "words": ["SANCTION", "CLEAVE", "TRIM", "DUST"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "INSTRUMENTS",
+        "tier": 1,
+        "words": ["HARP", "OBOE", "CELLO", "FLUTE"]
+      },
+      {
+        "name": "MAP FEATURES",
+        "tier": 2,
+        "words": ["SCALE", "LEGEND", "NORTH", "BORDER"]
+      },
+      {
+        "name": "CAN BE CUT",
+        "tier": 3,
+        "words": ["DIAMOND", "BUDGET", "LINE", "CAKE"]
+      },
+      {
+        "name": "NOUN/VERB SAME SPELLING",
+        "tier": 4,
+        "words": ["BOOK", "DRINK", "EMAIL", "TEXT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PLANETS",
+        "tier": 1,
+        "words": ["MARS", "VENUS", "SATURN", "NEPTUNE"]
+      },
+      {
+        "name": "CAMPUS WORDS",
+        "tier": 2,
+        "words": ["DORM", "MAJOR", "MIDTERM", "TUITION"]
+      },
+      {
+        "name": "CAN BE FRAMED",
+        "tier": 3,
+        "words": ["PHOTO", "ART", "HOUSE", "SUSPECT"]
+      },
+      {
+        "name": "HIDDEN WORD SPLITS",
+        "tier": 4,
+        "words": ["THERAPIST", "SEPARATE", "ANOTHER", "MOTHER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "FISH",
+        "tier": 1,
+        "words": ["CARP", "PERCH", "TROUT", "ROACH"]
+      },
+      {
+        "name": "FOOTWEAR WORDS",
+        "tier": 2,
+        "words": ["LACE", "HEEL", "BOOT", "INSOLE"]
+      },
+      {
+        "name": "MUSIC TERMS",
+        "tier": 3,
+        "words": ["BASS", "KEY", "SCALE", "NOTE"]
+      },
+      {
+        "name": "ARMY ALPHABET",
+        "tier": 4,
+        "words": ["ALPHA", "QUEBEC", "WHISKEY", "ROMEO"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PUNCTUATION",
+        "tier": 1,
+        "words": ["COMMA", "COLON", "DASH", "QUOTE"]
+      },
+      {
+        "name": "MARKET TALK",
+        "tier": 2,
+        "words": ["BULL", "BEAR", "SHARE", "YIELD"]
+      },
+      {
+        "name": "CAN BE LOCKED",
+        "tier": 3,
+        "words": ["DOOR", "PHONE", "BIKE", "VAULT"]
+      },
+      {
+        "name": "SOUND LIKE LETTERS",
+        "tier": 4,
+        "words": ["SEA", "WHY", "BEE", "ARE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "COOKING METHODS",
+        "tier": 1,
+        "words": ["BAKE", "BOIL", "GRILL", "STEAM"]
+      },
+      {
+        "name": "OFFICE OBJECTS",
+        "tier": 2,
+        "words": ["INBOX", "MEMO", "DESK", "BADGE"]
+      },
+      {
+        "name": "CAN BE MINED",
+        "tier": 3,
+        "words": ["DATA", "GOLD", "COAL", "ORE"]
+      },
+      {
+        "name": "SPORTS VERBS",
+        "tier": 4,
+        "words": ["DRIBBLE", "SERVE", "TACKLE", "CHECK"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "GEMS",
+        "tier": 1,
+        "words": ["OPAL", "RUBY", "JADE", "TOPAZ"]
+      },
+      {
+        "name": "PLACES TO SIT",
+        "tier": 2,
+        "words": ["BENCH", "STOOL", "COUCH", "THRONE"]
+      },
+      {
+        "name": "CAN BE SPUN",
+        "tier": 3,
+        "words": ["YARN", "STORY", "RECORD", "TOP"]
+      },
+      {
+        "name": "TRICKY VOWELS",
+        "tier": 4,
+        "words": ["QUEUE", "AUDIO", "EERIE", "IONIC"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "TIME OFF",
+        "tier": 1,
+        "words": ["BREAK", "LEAVE", "VACATION", "HOLIDAY"]
+      },
+      {
+        "name": "KEY COMMANDS",
+        "tier": 2,
+        "words": ["COPY", "PASTE", "UNDO", "SAVE"]
+      },
+      {
+        "name": "CAN BE PATCHED",
+        "tier": 3,
+        "words": ["JEANS", "ROAD", "SOFTWARE", "HOLE"]
+      },
+      {
+        "name": "HIDDEN ANIMALS",
+        "tier": 4,
+        "words": ["CATER", "LIONIZE", "DOGMA", "BEARER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "MOVIE ROLES",
+        "tier": 1,
+        "words": ["LEAD", "EXTRA", "VILLAIN", "HERO"]
+      },
+      {
+        "name": "ON A BOAT",
+        "tier": 2,
+        "words": ["MAST", "BOW", "DECK", "KEEL"]
+      },
+      {
+        "name": "CAN BE BOWED",
+        "tier": 3,
+        "words": ["VIOLIN", "HEAD", "RIBBON", "SHIP"]
+      },
+      {
+        "name": "ALSO DIRECTIONS",
+        "tier": 4,
+        "words": ["RIGHT", "LEFT", "DOWN", "BACK"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "GREEK LETTERS",
+        "tier": 1,
+        "words": ["ALPHA", "BETA", "GAMMA", "DELTA"]
+      },
+      {
+        "name": "PIZZA TOPPINGS",
+        "tier": 2,
+        "words": ["OLIVE", "BACON", "ONION", "PEPPER"]
+      },
+      {
+        "name": "CAN BE RATED",
+        "tier": 3,
+        "words": ["MOVIE", "HOTEL", "BOND", "PLAYER"]
+      },
+      {
+        "name": "TECH DOUBLE-MEANINGS",
+        "tier": 4,
+        "words": ["COOKIE", "CACHE", "THREAD", "PORT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "TYPE STYLES",
+        "tier": 1,
+        "words": ["BOLD", "ITALIC", "SERIF", "KERN"]
+      },
+      {
+        "name": "PAINTING TOOLS",
+        "tier": 2,
+        "words": ["BRUSH", "ROLLER", "TRAY", "TAPE"]
+      },
+      {
+        "name": "CAN BE SCORED",
+        "tier": 3,
+        "words": ["EXAM", "GOAL", "MOVIE", "DATE"]
+      },
+      {
+        "name": "SHORT NAMES",
+        "tier": 4,
+        "words": ["MAY", "JUNE", "WILL", "PAT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "HIKING GEAR",
+        "tier": 1,
+        "words": ["PACK", "MAP", "TENT", "STOVE"]
+      },
+      {
+        "name": "IN A CLASSROOM",
+        "tier": 2,
+        "words": ["BOARD", "CHALK", "DESK", "ERASER"]
+      },
+      {
+        "name": "CAN BE RUNG",
+        "tier": 3,
+        "words": ["BELL", "PHONE", "ALARM", "EAR"]
+      },
+      {
+        "name": "SOCIAL EVENTS (VERBS)",
+        "tier": 4,
+        "words": ["MEET", "DATE", "HANG", "SESSION"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PARTS OF A TREE",
+        "tier": 1,
+        "words": ["BARK", "ROOT", "LEAF", "SAP"]
+      },
+      {
+        "name": "SECURITY TERMS",
+        "tier": 2,
+        "words": ["TOKEN", "HASH", "SALT", "KEY"]
+      },
+      {
+        "name": "CAN BE SALTED",
+        "tier": 3,
+        "words": ["STEAK", "FRIES", "HASHBROWN", "SIDEWALK"]
+      },
+      {
+        "name": "MEAN \"CHEEK\"",
+        "tier": 4,
+        "words": ["SASS", "NERVE", "LIP", "MOUTH"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "VOLLEYBALL WORDS",
+        "tier": 1,
+        "words": ["SERVE", "SET", "SPIKE", "BLOCK"]
+      },
+      {
+        "name": "IN A GARAGE",
+        "tier": 2,
+        "words": ["JACK", "RAMP", "OIL", "TIRE"]
+      },
+      {
+        "name": "CAN BE JACKED",
+        "tier": 3,
+        "words": ["PRICE", "CAR", "MUSCLE", "PHONE"]
+      },
+      {
+        "name": "SOUND-LIKE FOODS",
+        "tier": 4,
+        "words": ["BERRY", "CURRY", "PITA", "PETER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SHAPES",
+        "tier": 1,
+        "words": ["CONE", "CUBE", "RING", "OVAL"]
+      },
+      {
+        "name": "EMAIL FIELDS",
+        "tier": 2,
+        "words": ["FROM", "FORWARD", "COPY", "SUBJECT"]
+      },
+      {
+        "name": "CAN BE RINGED",
+        "tier": 3,
+        "words": ["PHONE", "TREE", "PURCHASE", "LIVESTOCK"]
+      },
+      {
+        "name": "HIDE DAYS",
+        "tier": 4,
+        "words": ["MONARCH", "TUESDAY", "WEDGIE", "FRIDAY"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BASKETBALL STATS",
+        "tier": 1,
+        "words": ["POINT", "DUNK", "LAY", "BLOCK"]
+      },
+      {
+        "name": "PRINTING WORDS",
+        "tier": 2,
+        "words": ["INK", "TONER", "TRAY", "DUPLEX"]
+      },
+      {
+        "name": "CAN BE BLOCKED",
+        "tier": 3,
+        "words": ["SHOT", "NUMBER", "ROAD", "SINK"]
+      },
+      {
+        "name": "ALSO SURNAMES",
+        "tier": 4,
+        "words": ["HALL", "BROWN", "COOK", "KING"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SONG PARTS",
+        "tier": 1,
+        "words": ["HOOK", "VERSE", "CHORUS", "BRIDGE"]
+      },
+      {
+        "name": "GAME VERBS",
+        "tier": 2,
+        "words": ["PLAY", "DRAW", "ROLL", "DEAL"]
+      },
+      {
+        "name": "CAN BE DEALT",
+        "tier": 3,
+        "words": ["CARDS", "PROBLEM", "HAND", "TRADE"]
+      },
+      {
+        "name": "ODD PLURALS",
+        "tier": 4,
+        "words": ["CACTI", "FUNGI", "CRITERIA", "PHENOMENA"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "TIME UNITS",
+        "tier": 1,
+        "words": ["SECOND", "MINUTE", "HOUR", "DAY"]
+      },
+      {
+        "name": "IN A THEATER",
+        "tier": 2,
+        "words": ["AISLE", "STAGE", "CURTAIN", "BALCONY"]
+      },
+      {
+        "name": "CAN BE STAGED",
+        "tier": 3,
+        "words": ["SHOW", "PHOTO", "FIGHT", "HOUSE"]
+      },
+      {
+        "name": "FOLLOW \"BOX\"",
+        "tier": 4,
+        "words": ["OFFICE", "SCORE", "SPRING", "CUTTER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "TENNIS TERMS",
+        "tier": 1,
+        "words": ["ACE", "SERVE", "VOLLEY", "SET"]
+      },
+      {
+        "name": "MEASUREMENT TOOLS",
+        "tier": 2,
+        "words": ["TAPE", "RULER", "SCALE", "LEVEL"]
+      },
+      {
+        "name": "CAN BE SET",
+        "tier": 3,
+        "words": ["TABLE", "SUN", "TRAP", "TENNIS"]
+      },
+      {
+        "name": "ALSO MUSIC GENRES",
+        "tier": 4,
+        "words": ["HOUSE", "TRANCE", "SOUL", "DRILL"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "DESSERTS",
+        "tier": 1,
+        "words": ["TART", "MOUSSE", "BROWNIE", "SORBET"]
+      },
+      {
+        "name": "LEGAL WORDS",
+        "tier": 2,
+        "words": ["CASE", "ORDER", "CHARGE", "MOTION"]
+      },
+      {
+        "name": "CAN BE SERVED",
+        "tier": 3,
+        "words": ["DESSERT", "BALL", "PAPERS", "TIME"]
+      },
+      {
+        "name": "COMMON/TECH TERMS",
+        "tier": 4,
+        "words": ["ARTICLE", "OBJECT", "SUBJECT", "CONTENT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "IN A BATHROOM",
+        "tier": 1,
+        "words": ["SINK", "TOWEL", "SOAP", "MIRROR"]
+      },
+      {
+        "name": "ON A DESKTOP",
+        "tier": 2,
+        "words": ["ICON", "FOLDER", "TRASH", "WIDGET"]
+      },
+      {
+        "name": "CAN BE CLEANED",
+        "tier": 3,
+        "words": ["CACHE", "ROOM", "RECORD", "PLATE"]
+      },
+      {
+        "name": "HIDE WORDS",
+        "tier": 4,
+        "words": ["SCARF", "CART", "SHARE", "SHEAR"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "MATH CONSTANTS",
+        "tier": 1,
+        "words": ["PI", "E", "G", "C"]
+      },
+      {
+        "name": "BOARD GAMES",
+        "tier": 2,
+        "words": ["RISK", "CLUE", "SORRY", "LIFE"]
+      },
+      {
+        "name": "CAN BE \"GREEN\"",
+        "tier": 3,
+        "words": ["NEW", "NAIVE", "SICK", "JEALOUS"]
+      },
+      {
+        "name": "PASSWORD RULE STARTS",
+        "tier": 4,
+        "words": ["UPPER", "LOWER", "DIGIT", "SYMBOL"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "MOVIE RATINGS",
+        "tier": 1,
+        "words": ["G", "PG", "PG-13", "R"]
+      },
+      {
+        "name": "CAMERA PARTS",
+        "tier": 2,
+        "words": ["LENS", "FLASH", "SHUTTER", "TRIPOD"]
+      },
+      {
+        "name": "CAN BE SHOT",
+        "tier": 3,
+        "words": ["PHOTO", "MOVIE", "ARROW", "DRINK"]
+      },
+      {
+        "name": "FOLLOW \"SCREEN\"",
+        "tier": 4,
+        "words": ["SHOT", "TIME", "PLAY", "DOOR"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "CLOTHING",
+        "tier": 1,
+        "words": ["SHIRT", "SKIRT", "SOCK", "COAT"]
+      },
+      {
+        "name": "EDITING TERMS",
+        "tier": 2,
+        "words": ["CUT", "TRIM", "FADE", "TRACK"]
+      },
+      {
+        "name": "CAN BE TRACKED",
+        "tier": 3,
+        "words": ["PACKAGE", "DEER", "TIME", "MUD"]
+      },
+      {
+        "name": "DOUBLE LETTERS",
+        "tier": 4,
+        "words": ["COFFEE", "BALLOON", "TATTOO", "SUCCESS"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "HOUSE PARTS",
+        "tier": 1,
+        "words": ["ATTIC", "BASEMENT", "PORCH", "GARAGE"]
+      },
+      {
+        "name": "STAGE DIRECTIONS",
+        "tier": 2,
+        "words": ["ENTER", "EXIT", "CROSS", "ASIDE"]
+      },
+      {
+        "name": "CAN BE ENTERED",
+        "tier": 3,
+        "words": ["CODE", "ROOM", "RACE", "CONTEST"]
+      },
+      {
+        "name": "COMPUTING WORDS",
+        "tier": 4,
+        "words": ["PORT", "THREAD", "PATCH", "COOKIE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BREADS",
+        "tier": 1,
+        "words": ["BAGEL", "PITA", "RYE", "CIABATTA"]
+      },
+      {
+        "name": "GUITAR TERMS",
+        "tier": 2,
+        "words": ["PICK", "FRET", "STRAP", "AMP"]
+      },
+      {
+        "name": "CAN BE PICKED",
+        "tier": 3,
+        "words": ["LOCK", "TEAM", "NOSE", "GUITAR"]
+      },
+      {
+        "name": "FOOD & ACTION",
+        "tier": 4,
+        "words": ["TOAST", "ROLL", "GRILL", "SLICE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SCHOOL SUBJECTS",
+        "tier": 1,
+        "words": ["MATH", "ENGLISH", "BIOLOGY", "HISTORY"]
+      },
+      {
+        "name": "IN A LAB",
+        "tier": 2,
+        "words": ["BEAKER", "PIPETTE", "GLOVES", "PETRI"]
+      },
+      {
+        "name": "CAN BE \"HISTORY\"",
+        "tier": 3,
+        "words": ["BROWSER", "CREDIT", "CHAT", "SEARCH"]
+      },
+      {
+        "name": "APP FEATURES",
+        "tier": 4,
+        "words": ["STORY", "REEL", "FEED", "THREAD"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "STEAL (SLANG)",
+        "tier": 1,
+        "words": ["TAKE", "LIFT", "SWIPE", "PINCH"]
+      },
+      {
+        "name": "LIVE MUSIC",
+        "tier": 2,
+        "words": ["GIG", "SET", "ENCORE", "SOUND"]
+      },
+      {
+        "name": "CAN BE SWIPED",
+        "tier": 3,
+        "words": ["CARD", "PHONE", "DUST", "PAY"]
+      },
+      {
+        "name": "FOLLOW \"STAGE\"",
+        "tier": 4,
+        "words": ["DOOR", "FRIGHT", "LEFT", "HAND"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "TYPES OF SHRIMP",
+        "tier": 1,
+        "words": ["GARLIC", "TIGER", "JUMBO", "WHITE"]
+      },
+      {
+        "name": "PLUMBING GURU",
+        "tier": 2,
+        "words": ["PIPE", "TRAP", "DRAIN", "VALVE"]
+      },
+      {
+        "name": "CAN BE TRAPPED",
+        "tier": 3,
+        "words": ["MOUSE", "GAS", "WATER", "LIGHT"]
+      },
+      {
+        "name": "EASY TO MIX UP",
+        "tier": 4,
+        "words": ["METAL", "MEDAL", "MEDDLE", "METTLE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "ART SUPPLIES",
+        "tier": 1,
+        "words": ["INK", "CLAY", "PASTEL", "CHARCOAL"]
+      },
+      {
+        "name": "SITE PARTS",
+        "tier": 2,
+        "words": ["HEADER", "FOOTER", "MENU", "LINK"]
+      },
+      {
+        "name": "CAN BE LINKED",
+        "tier": 3,
+        "words": ["ARMS", "PAGES", "CHAINS", "ACCOUNTS"]
+      },
+      {
+        "name": "METAL OR BAND",
+        "tier": 4,
+        "words": ["IRON", "STEEL", "SLAYER", "KISS"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "GOLF TERMS",
+        "tier": 1,
+        "words": ["PAR", "BIRDIE", "EAGLE", "PUTT"]
+      },
+      {
+        "name": "DRAWER UTENSILS",
+        "tier": 2,
+        "words": ["FORK", "SPOON", "TONGS", "PEELER"]
+      },
+      {
+        "name": "PUT/PUTT FAMILY",
+        "tier": 3,
+        "words": ["PLACE", "SET", "PUT", "PARK"]
+      },
+      {
+        "name": "FOLLOW \"GREEN\"",
+        "tier": 4,
+        "words": ["LIGHT", "ROOM", "CARD", "THUMB"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "THINGS YOU BOOK",
+        "tier": 1,
+        "words": ["FLIGHT", "HOTEL", "TABLE", "TICKET"]
+      },
+      {
+        "name": "TV WORDS",
+        "tier": 2,
+        "words": ["CHANNEL", "REMOTE", "STREAM", "CABLE"]
+      },
+      {
+        "name": "CAN BE A CABLE",
+        "tier": 3,
+        "words": ["TV", "BRIDGE", "ROPE", "WIRE"]
+      },
+      {
+        "name": "HIDDEN DAYS",
+        "tier": 4,
+        "words": ["MONKEY", "TUESDAY", "WEDNESDAY", "FRIDAY"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SPICES",
+        "tier": 1,
+        "words": ["CUMIN", "CLOVES", "PAPRIKA", "DILL"]
+      },
+      {
+        "name": "IN A BROWSER",
+        "tier": 2,
+        "words": ["TAB", "HISTORY", "CACHE", "COOKIE"]
+      },
+      {
+        "name": "CAN BE \"DILL\"",
+        "tier": 3,
+        "words": ["PICKLE", "HERB", "DEAL", "PROBLEM"]
+      },
+      {
+        "name": "MEAN \"PROBLEM\"",
+        "tier": 4,
+        "words": ["ISSUE", "HITCH", "SNAG", "STICK"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SIMPLE MACHINES",
+        "tier": 1,
+        "words": ["LEVER", "PULLEY", "WEDGE", "SCREW"]
+      },
+      {
+        "name": "IN A PHOTO",
+        "tier": 2,
+        "words": ["FRAME", "FILTER", "CAPTION", "FLASH"]
+      },
+      {
+        "name": "CAN BE CAPTIONED",
+        "tier": 3,
+        "words": ["PHOTO", "MEME", "VIDEO", "CHART"]
+      },
+      {
+        "name": "FOLLOW \"FLASH\"",
+        "tier": 4,
+        "words": ["CARD", "DRIVE", "LIGHT", "MOB"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "JOBS",
+        "tier": 1,
+        "words": ["COOK", "BAKER", "GUARD", "PILOT"]
+      },
+      {
+        "name": "IN A STADIUM",
+        "tier": 2,
+        "words": ["SEAT", "AISLE", "SCORE", "BANNER"]
+      },
+      {
+        "name": "CAN BE GUARDED",
+        "tier": 3,
+        "words": ["SECRET", "RIM", "GOAL", "DOOR"]
+      },
+      {
+        "name": "PERSON OR THING",
+        "tier": 4,
+        "words": ["HOST", "COACH", "SERVER", "DRIVER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "STATE-LIKE WORDS",
+        "tier": 1,
+        "words": ["MAINE", "TEXAS", "OHIO", "UTAH"]
+      },
+      {
+        "name": "CONTROLLER PARTS",
+        "tier": 2,
+        "words": ["TRIGGER", "STICK", "BUTTON", "PAD"]
+      },
+      {
+        "name": "CAN BE STUCK",
+        "tier": 3,
+        "words": ["GLUE", "MUD", "PIN", "HIT"]
+      },
+      {
+        "name": "COMPUTING COMMANDS",
+        "tier": 4,
+        "words": ["RUN", "STOP", "PRINT", "BREAK"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "DRINKS",
+        "tier": 1,
+        "words": ["SODA", "JUICE", "TEA", "WATER"]
+      },
+      {
+        "name": "SOCIAL MEDIA",
+        "tier": 2,
+        "words": ["FEED", "STORY", "REEL", "POST"]
+      },
+      {
+        "name": "CAN BE A STORY",
+        "tier": 3,
+        "words": ["BUILDING", "TALE", "LIE", "NEWS"]
+      },
+      {
+        "name": "FOLLOW \"BREAK\"",
+        "tier": 4,
+        "words": ["DOWN", "UP", "OUT", "POINT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PHONE PARTS",
+        "tier": 1,
+        "words": ["SCREEN", "SPEAKER", "CAMERA", "BATTERY"]
+      },
+      {
+        "name": "FINANCE TERMS",
+        "tier": 2,
+        "words": ["BOND", "YIELD", "RATE", "FUND"]
+      },
+      {
+        "name": "CAN BE RATE(D)",
+        "tier": 3,
+        "words": ["MOVIE", "PLAYER", "HOTEL", "LOAN"]
+      },
+      {
+        "name": "TECH & EVERYDAY",
+        "tier": 4,
+        "words": ["CLOUD", "THREAD", "PORT", "COOKIE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "COUNTRY NAMES",
+        "tier": 1,
+        "words": ["CANADA", "FRANCE", "JAPAN", "BRAZIL"]
+      },
+      {
+        "name": "KITCHEN ITEMS",
+        "tier": 2,
+        "words": ["POT", "RACK", "TONGS", "LADLE"]
+      },
+      {
+        "name": "CAN BE PANNED",
+        "tier": 3,
+        "words": ["MOVIE", "GOLD", "CAMERA", "CRITICISM"]
+      },
+      {
+        "name": "MEAN \"CRITICIZE\"",
+        "tier": 4,
+        "words": ["SLAM", "ROAST", "RIP", "TRASH"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SPACE TERMS",
+        "tier": 1,
+        "words": ["COMET", "ORBIT", "NEBULA", "MOON"]
+      },
+      {
+        "name": "JEWELRY",
+        "tier": 2,
+        "words": ["RING", "CHAIN", "CHARM", "CLASP"]
+      },
+      {
+        "name": "CAN ORBIT",
+        "tier": 3,
+        "words": ["EYE", "PLANET", "SATELLITE", "FANBASE"]
+      },
+      {
+        "name": "SOCIAL GROUPS",
+        "tier": 4,
+        "words": ["CIRCLE", "CLIQUE", "CREW", "GANG"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "THINGS YOU SEAL",
+        "tier": 1,
+        "words": ["ENVELOPE", "JAR", "DEAL", "BAG"]
+      },
+      {
+        "name": "ON A MAP",
+        "tier": 2,
+        "words": ["BAY", "CAPE", "RIDGE", "BORDER"]
+      },
+      {
+        "name": "CAN BE \"DELTA\"",
+        "tier": 3,
+        "words": ["AIRLINE", "CHANGE", "SYMBOL", "RIVER"]
+      },
+      {
+        "name": "GREEK LETTERS",
+        "tier": 4,
+        "words": ["ALPHA", "BETA", "GAMMA", "DELTA"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "COMPUTER PARTS",
+        "tier": 1,
+        "words": ["CPU", "GPU", "RAM", "DISK"]
+      },
+      {
+        "name": "KITCHEN CUTS",
+        "tier": 2,
+        "words": ["DICE", "SLICE", "CHOP", "MINCE"]
+      },
+      {
+        "name": "CAN BE MINCED",
+        "tier": 3,
+        "words": ["GARLIC", "WORDS", "MEAT", "OATH"]
+      },
+      {
+        "name": "AS INSULTS",
+        "tier": 4,
+        "words": ["JERK", "CLOWN", "TOOL", "BIRD"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "LARGE BIRDS",
+        "tier": 1,
+        "words": ["EAGLE", "FALCON", "SWAN", "GOOSE"]
+      },
+      {
+        "name": "HOCKEY TERMS",
+        "tier": 2,
+        "words": ["ICING", "PUCK", "OFFSIDE", "SLAPSHOT"]
+      },
+      {
+        "name": "CAN BE ICING",
+        "tier": 3,
+        "words": ["CAKE", "HOCKEY", "INJURY", "SUGAR"]
+      },
+      {
+        "name": "MEAN \"HIT\"",
+        "tier": 4,
+        "words": ["CHECK", "STRIKE", "SMACK", "TAG"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "STATIONERY",
+        "tier": 1,
+        "words": ["PEN", "INK", "PAPER", "STAMP"]
+      },
+      {
+        "name": "HARDWARE ITEMS",
+        "tier": 2,
+        "words": ["NAIL", "BOLT", "WASHER", "SCREW"]
+      },
+      {
+        "name": "CAN BE STAMPED",
+        "tier": 3,
+        "words": ["PASSPORT", "METAL", "LETTER", "FOOT"]
+      },
+      {
+        "name": "ALT SPELLINGS",
+        "tier": 4,
+        "words": ["GRAY", "THEATER", "CANCELLED", "JUDGMENT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "CLOCK WORDS",
+        "tier": 1,
+        "words": ["HAND", "FACE", "DIAL", "TICK"]
+      },
+      {
+        "name": "SOCIAL PLANS",
+        "tier": 2,
+        "words": ["DATE", "HANG", "CALL", "VISIT"]
+      },
+      {
+        "name": "CAN BE CALLED",
+        "tier": 3,
+        "words": ["PHONE", "STRIKE", "MEETING", "NAME"]
+      },
+      {
+        "name": "FOLLOW \"HAND\"",
+        "tier": 4,
+        "words": ["OFF", "OUT", "SHAKE", "MADE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PAPER FORMATS",
+        "tier": 1,
+        "words": ["LETTER", "LEGAL", "PORTRAIT", "TABLOID"]
+      },
+      {
+        "name": "NEWSROOM TERMS",
+        "tier": 2,
+        "words": ["SCOOP", "COPY", "BYLINE", "EDIT"]
+      },
+      {
+        "name": "CAN BE \"LEAD\"",
+        "tier": 3,
+        "words": ["METAL", "STORY", "ROLE", "CLUE"]
+      },
+      {
+        "name": "METAL & VERB",
+        "tier": 4,
+        "words": ["IRON", "LEAD", "STEEL", "TIN"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "MYTH CREATURES",
+        "tier": 1,
+        "words": ["HYDRA", "SPHINX", "CYCLOPS", "PHOENIX"]
+      },
+      {
+        "name": "IN A GARDEN",
+        "tier": 2,
+        "words": ["HOSE", "RAKE", "SEED", "POT"]
+      },
+      {
+        "name": "CAN BE SEEDED",
+        "tier": 3,
+        "words": ["TOURNAMENT", "FRUIT", "CLOUD", "GARDEN"]
+      },
+      {
+        "name": "FOLLOW \"POT\"",
+        "tier": 4,
+        "words": ["HOLE", "LUCK", "ROAST", "SHOT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "ON A FARM",
+        "tier": 1,
+        "words": ["BARN", "SILO", "TRACTOR", "HAY"]
+      },
+      {
+        "name": "NETWORKING",
+        "tier": 2,
+        "words": ["PORT", "ROUTER", "PACKET", "PING"]
+      },
+      {
+        "name": "CAN BE PINGED",
+        "tier": 3,
+        "words": ["PHONE", "SERVER", "MESSAGE", "RADAR"]
+      },
+      {
+        "name": "SOUND EFFECTS",
+        "tier": 4,
+        "words": ["CLINK", "THUD", "WHOOSH", "BANG"]
+      }
+    ]
+  },
+
+  {
+    "groups": [
+      {
+        "name": "LOOK (VERBS)",
+        "tier": 1,
+        "words": ["SEE", "STARE", "GLANCE", "PEEK"]
+      },
+      {
+        "name": "IN A CLOSET",
+        "tier": 2,
+        "words": ["HANGER", "SHOE", "SHELF", "DRAWER"]
+      },
+      {
+        "name": "CAN BE A RACK",
+        "tier": 3,
+        "words": ["BILL", "POOL", "WINE", "PAIN"]
+      },
+      {
+        "name": "MEAN \"PAIN\"",
+        "tier": 4,
+        "words": ["ACHE", "HURT", "BURN", "STING"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "FAMOUS RIVERS",
+        "tier": 1,
+        "words": ["NILE", "AMAZON", "DANUBE", "GANGES"]
+      },
+      {
+        "name": "IN A TOOLKIT",
+        "tier": 2,
+        "words": ["HAMMER", "DRILL", "WRENCH", "SAW"]
+      },
+      {
+        "name": "CAN BE LEVEL",
+        "tier": 3,
+        "words": ["FLOOR", "GAME", "HEAD", "TONE"]
+      },
+      {
+        "name": "FOLLOW \"HEAD\"",
+        "tier": 4,
+        "words": ["START", "LINE", "CASE", "COUNT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "THINGS YOU DRAFT",
+        "tier": 1,
+        "words": ["EMAIL", "ESSAY", "TEAM", "CONTRACT"]
+      },
+      {
+        "name": "BEER WORDS",
+        "tier": 2,
+        "words": ["PINT", "HOPS", "FOAM", "LAGER"]
+      },
+      {
+        "name": "CAN BE A TEAM",
+        "tier": 3,
+        "words": ["SPORTS", "WORK", "OXEN", "UP"]
+      },
+      {
+        "name": "FOLLOW \"WORK\"",
+        "tier": 4,
+        "words": ["FLOW", "AROUND", "OUT", "SHOP"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "FILE PATH PARTS",
+        "tier": 1,
+        "words": ["ROOT", "FOLDER", "FILE", "EXT"]
+      },
+      {
+        "name": "IN A HOSPITAL",
+        "tier": 2,
+        "words": ["WARD", "CHART", "NURSE", "IV"]
+      },
+      {
+        "name": "CAN BE CHARTED",
+        "tier": 3,
+        "words": ["SONG", "COURSE", "DATA", "SHIP"]
+      },
+      {
+        "name": "FOLLOW \"IV\"",
+        "tier": 4,
+        "words": ["DRIP", "LEAGUE", "STAND", "BAG"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "HOLIDAYS",
+        "tier": 1,
+        "words": ["EASTER", "HALLOWEEN", "HANUKKAH", "DIWALI"]
+      },
+      {
+        "name": "COSTUME PARTS",
+        "tier": 2,
+        "words": ["CAPE", "WIG", "PROPS", "GLOVES"]
+      },
+      {
+        "name": "CAN BE MASKED",
+        "tier": 3,
+        "words": ["FACE", "PASSWORD", "SCENT", "FEELING"]
+      },
+      {
+        "name": "TECH DOUBLE-MEANINGS",
+        "tier": 4,
+        "words": ["THREAD", "PATCH", "PORT", "COOKIE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "CARD TYPES",
+        "tier": 1,
+        "words": ["DEBIT", "CREDIT", "GIFT", "ID"]
+      },
+      {
+        "name": "IN A LIBRARY",
+        "tier": 2,
+        "words": ["STACKS", "CATALOG", "AISLE", "DESK"]
+      },
+      {
+        "name": "CAN BE STACKED",
+        "tier": 3,
+        "words": ["BOOKS", "CHIPS", "ODDS", "FIREWOOD"]
+      },
+      {
+        "name": "DECK WORDS",
+        "tier": 4,
+        "words": ["DECK", "PATTERN", "TRACK", "STACK"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "FAST",
+        "tier": 1,
+        "words": ["QUICK", "RAPID", "SWIFT", "BRISK"]
+      },
+      {
+        "name": "FOOTBALL TERMS",
+        "tier": 2,
+        "words": ["DOWN", "SACK", "PUNT", "FUMBLE"]
+      },
+      {
+        "name": "CAN BE A PASS",
+        "tier": 3,
+        "words": ["TEST", "BALL", "LAW", "TIME"]
+      },
+      {
+        "name": "FOLLOW \"TIME\"",
+        "tier": 4,
+        "words": ["OUT", "LINE", "TABLE", "ZONE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "TECH ROLES",
+        "tier": 1,
+        "words": ["DEV", "ADMIN", "TESTER", "DESIGNER"]
+      },
+      {
+        "name": "FILM WORDS",
+        "tier": 2,
+        "words": ["CUT", "TAKE", "CAST", "SCORE"]
+      },
+      {
+        "name": "CAN BE CAST",
+        "tier": 3,
+        "words": ["ACTORS", "SPELL", "LINE", "SHADOW"]
+      },
+      {
+        "name": "MEAN \"THROW\"",
+        "tier": 4,
+        "words": ["HURL", "TOSS", "PITCH", "CHUCK"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "COINS",
+        "tier": 1,
+        "words": ["PENNY", "NICKEL", "QUARTER", "LOONIE"]
+      },
+      {
+        "name": "CAMERA TERMS",
+        "tier": 2,
+        "words": ["LENS", "FLASH", "ZOOM", "FILTER"]
+      },
+      {
+        "name": "CAN BE \"DIME\"",
+        "tier": 3,
+        "words": ["COIN", "DOZEN", "SNITCH", "LOOK"]
+      },
+      {
+        "name": "SLANG: ATTRACTIVE",
+        "tier": 4,
+        "words": ["DIME", "TEN", "CATCH", "LOOKER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "IN A BAKERY",
+        "tier": 1,
+        "words": ["ROLL", "BUN", "TART", "SCONE"]
+      },
+      {
+        "name": "COMPUTER INPUT",
+        "tier": 2,
+        "words": ["MOUSE", "KEY", "TOUCHPAD", "MIC"]
+      },
+      {
+        "name": "CAN BE TAPPED",
+        "tier": 3,
+        "words": ["KEG", "PHONE", "TREE", "WIRE"]
+      },
+      {
+        "name": "FOLLOW \"KEY\"",
+        "tier": 4,
+        "words": ["NOTE", "STONE", "BOARD", "CHAIN"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BIG CATS",
+        "tier": 1,
+        "words": ["LION", "TIGER", "LEOPARD", "PUMA"]
+      },
+      {
+        "name": "DOCUMENT PARTS",
+        "tier": 2,
+        "words": ["TITLE", "HEADER", "FOOTER", "BODY"]
+      },
+      {
+        "name": "CAN BE \"PUMA\"",
+        "tier": 3,
+        "words": ["CAT", "SHOE", "BRAND", "LOGO"]
+      },
+      {
+        "name": "BRANDS AS WORDS",
+        "tier": 4,
+        "words": ["APPLE", "GAP", "TARGET", "SHELL"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PAINT SHADES",
+        "tier": 1,
+        "words": ["IVORY", "NAVY", "OLIVE", "MAROON"]
+      },
+      {
+        "name": "ON A SHIP",
+        "tier": 2,
+        "words": ["BOW", "STERN", "DECK", "HATCH"]
+      },
+      {
+        "name": "CAN BE PORT",
+        "tier": 3,
+        "words": ["HARBOR", "COMPUTER", "WINE", "SIDE"]
+      },
+      {
+        "name": "ALSO DIRECTIONS",
+        "tier": 4,
+        "words": ["PORT", "STARBOARD", "RIGHT", "LEFT"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "CAMPING ITEMS",
+        "tier": 1,
+        "words": ["TENT", "MAP", "LANTERN", "TRAIL"]
+      },
+      {
+        "name": "IN A SERVER ROOM",
+        "tier": 2,
+        "words": ["RACK", "CABLE", "PORT", "COOLING"]
+      },
+      {
+        "name": "CAN BE FIRED",
+        "tier": 3,
+        "words": ["EMPLOYEE", "GUN", "ENGINE", "KILN"]
+      },
+      {
+        "name": "FOLLOW \"FIRE\"",
+        "tier": 4,
+        "words": ["WALL", "DRILL", "SALE", "PLACE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "IN A WALLET",
+        "tier": 1,
+        "words": ["CASH", "PHOTO", "CARD", "RECEIPT"]
+      },
+      {
+        "name": "DATABASE WORDS",
+        "tier": 2,
+        "words": ["TABLE", "ROW", "KEY", "QUERY"]
+      },
+      {
+        "name": "CAN BE AN INDEX",
+        "tier": 3,
+        "words": ["BOOK", "DATABASE", "FINGER", "STOCK"]
+      },
+      {
+        "name": "FINGERS",
+        "tier": 4,
+        "words": ["INDEX", "RING", "MIDDLE", "THUMB"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "EMAIL PARTS",
+        "tier": 1,
+        "words": ["COPY", "REPLY", "SUBJECT", "ATTACHMENT"]
+      },
+      {
+        "name": "IN A KITCHEN",
+        "tier": 2,
+        "words": ["SALT", "PEPPER", "OIL", "VINEGAR"]
+      },
+      {
+        "name": "CAN BE A SIGNATURE",
+        "tier": 3,
+        "words": ["SCENT", "MOVE", "DISH", "NAME"]
+      },
+      {
+        "name": "FOLLOW \"OIL\"",
+        "tier": 4,
+        "words": ["CHANGE", "PAINT", "SPILL", "RIG"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "STREET FEATURES",
+        "tier": 1,
+        "words": ["CURB", "LANE", "SIGN", "LIGHT"]
+      },
+      {
+        "name": "WINDOW/UI WORDS",
+        "tier": 2,
+        "words": ["PANE", "TAB", "DIALOG", "POPUP"]
+      },
+      {
+        "name": "CAN BE PROMPT",
+        "tier": 3,
+        "words": ["EARLY", "CUE", "QUESTION", "SHELL"]
+      },
+      {
+        "name": "SHELL THINGS",
+        "tier": 4,
+        "words": ["PROMPT", "PIPE", "ECHO", "ALIAS"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "MOUNTAIN WORDS",
+        "tier": 1,
+        "words": ["PEAK", "RIDGE", "SLOPE", "SUMMIT"]
+      },
+      {
+        "name": "THEATER WORDS",
+        "tier": 2,
+        "words": ["STAGE", "AISLE", "BALCONY", "CURTAIN"]
+      },
+      {
+        "name": "CAN BE PEAK",
+        "tier": 3,
+        "words": ["MOUNTAIN", "INTEREST", "HOUR", "PERFORMANCE"]
+      },
+      {
+        "name": "MEAN \"PERFORMANCE\"",
+        "tier": 4,
+        "words": ["SHOW", "ACT", "RUN", "SET"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "END (VERBS)",
+        "tier": 1,
+        "words": ["FINISH", "STOP", "CLOSE", "WRAP"]
+      },
+      {
+        "name": "IN A PRESENTATION",
+        "tier": 2,
+        "words": ["SLIDE", "DECK", "NOTES", "CLICKER"]
+      },
+      {
+        "name": "CAN BE A WRAP",
+        "tier": 3,
+        "words": ["GIFT", "MOVIE", "TORTILLA", "BANDAGE"]
+      },
+      {
+        "name": "FOLLOW \"CLOSE\"",
+        "tier": 4,
+        "words": ["UP", "CALL", "OUT", "IN"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SHOE PARTS",
+        "tier": 1,
+        "words": ["SOLE", "HEEL", "LACE", "TONGUE"]
+      },
+      {
+        "name": "BOOK PARTS",
+        "tier": 2,
+        "words": ["PAGE", "SPINE", "COVER", "INDEX"]
+      },
+      {
+        "name": "ALWAYS MOVING",
+        "tier": 3,
+        "words": ["CLOUD", "CLOCK", "RIVER", "ATOM"]
+      },
+      {
+        "name": "MEAN \"JOKE\"",
+        "tier": 4,
+        "words": ["GAG", "BIT", "LAUGH", "PUN"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "COMPUTER HARDWARE",
+        "tier": 1,
+        "words": ["MOUSE", "KEYBOARD", "MONITOR", "PRINTER"]
+      },
+      {
+        "name": "IN A BAR",
+        "tier": 2,
+        "words": ["SHOT", "TIP", "BOOTH", "MENU"]
+      },
+      {
+        "name": "CAN BE A TAB",
+        "tier": 3,
+        "words": ["BROWSER", "BILL", "SODA", "FILE"]
+      },
+      {
+        "name": "FOLLOW \"SHOT\"",
+        "tier": 4,
+        "words": ["CLOCK", "GUN", "MOON", "CALL"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "IN A PHARMACY",
+        "tier": 1,
+        "words": ["PILL", "DOSE", "LABEL", "REFILL"]
+      },
+      {
+        "name": "IN A CLASSROOM",
+        "tier": 2,
+        "words": ["BELL", "DESK", "BOARD", "HOMEWORK"]
+      },
+      {
+        "name": "CAN BE GRADE",
+        "tier": 3,
+        "words": ["ROAD", "SCHOOL", "MEAT", "SLOPE"]
+      },
+      {
+        "name": "FOLLOW \"ROAD\"",
+        "tier": 4,
+        "words": ["WORK", "MAP", "SHOW", "RAGE"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PROGRAM PARTS",
+        "tier": 1,
+        "words": ["CLASS", "LOOP", "ARRAY", "FUNCTION"]
+      },
+      {
+        "name": "PLAY PARTS",
+        "tier": 2,
+        "words": ["ACT", "SCENE", "CAST", "PROLOGUE"]
+      },
+      {
+        "name": "CAN BE A LINE",
+        "tier": 3,
+        "words": ["SCRIPT", "QUEUE", "FISHING", "BORDER"]
+      },
+      {
+        "name": "MEAN \"QUEUE\"",
+        "tier": 4,
+        "words": ["LINE", "WAIT", "STACK", "BACKLOG"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "IN A FRIDGE",
+        "tier": 1,
+        "words": ["MILK", "BROCCOLI", "TUPPERWARE", "JUICE"]
+      },
+      {
+        "name": "OFFICE DOCS",
+        "tier": 2,
+        "words": ["MEMO", "REPORT", "INVOICE", "CONTRACT"]
+      },
+      {
+        "name": "CAN BE BRIEF",
+        "tier": 3,
+        "words": ["DESCRIPTION", "LEGAL", "MEETING", "UNDERWEAR"]
+      },
+      {
+        "name": "MEAN \"SHORT\"",
+        "tier": 4,
+        "words": ["BRIEF", "TINY", "MINUTE", "LOW"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "THINGS WITH WINGS",
+        "tier": 1,
+        "words": ["BIRD", "PLANE", "BEE", "ANGEL"]
+      },
+      {
+        "name": "BEACH THINGS",
+        "tier": 2,
+        "words": ["TIDE", "SAND", "SHELL", "SURF"]
+      },
+      {
+        "name": "CAN BE SURFED",
+        "tier": 3,
+        "words": ["WAVE", "WEB", "BOARD", "CHANNEL"]
+      },
+      {
+        "name": "FOLLOW \"WEB\"",
+        "tier": 4,
+        "words": ["SITE", "BROWSER", "PAGE", "RING"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "UI ELEMENTS",
+        "tier": 1,
+        "words": ["MENU", "ICON", "BUTTON", "SLIDE"]
+      },
+      {
+        "name": "IN THE KITCHEN",
+        "tier": 2,
+        "words": ["COOK", "DISH", "RACK", "FLIP"]
+      },
+      {
+        "name": "CAN BE A TAB",
+        "tier": 3,
+        "words": ["BROWSER", "BILL", "SODA", "FILE"]
+      },
+      {
+        "name": "MEAN \"CAP\"",
+        "tier": 4,
+        "words": ["LIMIT", "HAT", "TOP", "LID"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BIKE PARTS",
+        "tier": 1,
+        "words": ["BRAKE", "PEDAL", "TIRE", "SPOKE"]
+      },
+      {
+        "name": "NETWORK WORDS",
+        "tier": 2,
+        "words": ["ROUTE", "PORT", "PING", "PACKET"]
+      },
+      {
+        "name": "CAN BE A CHAIN",
+        "tier": 3,
+        "words": ["BIKE", "STORE", "EVENTS", "PRISON"]
+      },
+      {
+        "name": "FOLLOW \"CHAIN\"",
+        "tier": 4,
+        "words": ["REACTION", "LINK", "SAW", "MAIL"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "AT A RESTAURANT",
+        "tier": 1,
+        "words": ["MENU", "SERVER", "BILL", "BOOTH"]
+      },
+      {
+        "name": "IN A HOSPITAL",
+        "tier": 2,
+        "words": ["WARD", "CHART", "NURSE", "IV"]
+      },
+      {
+        "name": "CAN BE A TIP",
+        "tier": 3,
+        "words": ["ADVICE", "MONEY", "POINT", "EDGE"]
+      },
+      {
+        "name": "MEAN \"EDGE\"",
+        "tier": 4,
+        "words": ["RIM", "BRINK", "LIP", "TIP"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "IN A BARBERSHOP",
+        "tier": 1,
+        "words": ["CLIP", "TRIM", "FADE", "BUZZ"]
+      },
+      {
+        "name": "SOUND WORDS",
+        "tier": 2,
+        "words": ["HUM", "RING", "THUD", "CLACK"]
+      },
+      {
+        "name": "CAN BE A RING",
+        "tier": 3,
+        "words": ["PHONE", "BELL", "CIRCLE", "GROUP"]
+      },
+      {
+        "name": "FOLLOW \"PHONE\"",
+        "tier": 4,
+        "words": ["BOOK", "CALL", "LINE", "HOME"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "KITCHEN APPLIANCES",
+        "tier": 1,
+        "words": ["TOASTER", "BLENDER", "KETTLE", "OVEN"]
+      },
+      {
+        "name": "MUSIC TERMS",
+        "tier": 2,
+        "words": ["MIX", "TRACK", "SCORE", "TONE"]
+      },
+      {
+        "name": "CAN BE MIXED",
+        "tier": 3,
+        "words": ["DRINK", "TEAM", "PAINT", "SIGNALS"]
+      },
+      {
+        "name": "COMMON BUTTONS",
+        "tier": 4,
+        "words": ["HOME", "BACK", "SHIFT", "ENTER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "BOARD GAME PIECES",
+        "tier": 1,
+        "words": ["TOKEN", "CARD", "PAWN", "TILE"]
+      },
+      {
+        "name": "IN A COMPUTER",
+        "tier": 2,
+        "words": ["CACHE", "THREAD", "PORT", "PATCH"]
+      },
+      {
+        "name": "CAN BE A DIE",
+        "tier": 3,
+        "words": ["TOOL", "CUBE", "PASS", "FADE"]
+      },
+      {
+        "name": "MEAN \"FADE\"",
+        "tier": 4,
+        "words": ["DIE", "DIM", "WANE", "EBB"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "PARK FEATURES",
+        "tier": 1,
+        "words": ["TRAIL", "POND", "BENCH", "GAZEBO"]
+      },
+      {
+        "name": "PHOTO WORDS",
+        "tier": 2,
+        "words": ["FLASH", "FILTER", "FRAME", "LENS"]
+      },
+      {
+        "name": "CAN BE A FOCUS",
+        "tier": 3,
+        "words": ["CAMERA", "EYE", "GOAL", "TOPIC"]
+      },
+      {
+        "name": "FOLLOW \"EYE\"",
+        "tier": 4,
+        "words": ["CONTACT", "WITNESS", "LINER", "BROW"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "FILE PROPERTIES",
+        "tier": 1,
+        "words": ["NAME", "TYPE", "SIZE", "EXTENSION"]
+      },
+      {
+        "name": "DATE TERMS",
+        "tier": 2,
+        "words": ["DATE", "TIME", "PLACE", "PLAN"]
+      },
+      {
+        "name": "CAN BE \"PLACE\"",
+        "tier": 3,
+        "words": ["BET", "ITEM", "TROPHY", "ORDER"]
+      },
+      {
+        "name": "FOLLOW \"MAP\"",
+        "tier": 4,
+        "words": ["KEY", "ROOM", "APP", "QUEST"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "FILE TYPES",
+        "tier": 1,
+        "words": ["PDF", "DOCX", "PNG", "MP3"]
+      },
+      {
+        "name": "GREEK GODS",
+        "tier": 2,
+        "words": ["ZEUS", "HERA", "ARES", "APOLLO"]
+      },
+      {
+        "name": "CAN BE STREAMED",
+        "tier": 3,
+        "words": ["MUSIC", "VIDEO", "GAME", "DATA"]
+      },
+      {
+        "name": "PALINDROMES",
+        "tier": 4,
+        "words": ["LEVEL", "RADAR", "CIVIC", "REFER"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "CHESS OPENINGS",
+        "tier": 1,
+        "words": ["SICILIAN", "FRENCH", "LONDON", "CARO-KANN"]
+      },
+      {
+        "name": "COFFEE DRINKS",
+        "tier": 2,
+        "words": ["LATTE", "MOCHA", "AMERICANO", "ESPRESSO"]
+      },
+      {
+        "name": "CAN BE \"FRENCH\"",
+        "tier": 3,
+        "words": ["TOAST", "PRESS", "BRAID", "HORN"]
+      },
+      {
+        "name": "SILENT START LETTER",
+        "tier": 4,
+        "words": ["GNOME", "KNIFE", "PSYCH", "WRAP"]
+      }
+    ]
+  },
+  {
+    "groups": [
+      {
+        "name": "SYMBOLS",
+        "tier": 1,
+        "words": ["AMPERSAND", "ASTERISK", "DASH", "CARET"]
+      },
+      {
+        "name": "ENDING IN -MENT",
+        "tier": 2,
+        "words": ["GOVERN", "EXCITE", "IMPROVE", "PARCH"]
+      },
+      {
+        "name": "CAN BE FLAGGED",
+        "tier": 3,
+        "words": ["EMAIL", "CONTENT", "ACCOUNT", "REVIEW"]
+      },
+      {
+        "name": "CUTTING TOOLS",
+        "tier": 4,
+        "words": ["SCISSORS", "RAZOR", "SAW", "KNIFE"]
+      }
+    ]
+  }
+]
