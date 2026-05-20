@@ -1,14 +1,17 @@
 :root {
-  --bg: #0b0f14;
-  --tile: #ffffff;
-  --tileBorder: #d6dce5;
-  --tileHover: #9fb2cc;
+  --bg: #080d12;
+  --panel: #101824;
+  --panel2: #142034;
+  --border: #2d3d57;
   --text: #e8eef6;
+  --muted: #7b879a;
+  --tile: #ffffff;
   --tileText: #111827;
-  --muted: #6b778a;
+  --tileBorder: #d8dee8;
   --blue: #63a7ff;
   --danger: #ff3b30;
-  --card: #101824;
+  --dangerDark: #7f1d1d;
+  --good: #7dd87d;
 }
 
 * {
@@ -33,94 +36,308 @@ body {
   min-height: 100dvh;
   display: grid;
   place-items: center;
-  padding: 16px;
+  padding: 10px;
 }
 
 .gameArea {
   width: min(94vw, 460px);
-  min-height: min(720px, 96dvh);
+  min-height: min(760px, 96dvh);
   max-height: 96dvh;
-  padding: 14px;
+  position: relative;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  position: relative;
 }
 
-.header {
+.screen {
+  display: none;
+  width: 100%;
+  min-height: 100%;
+}
+
+.screen.active {
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.devToggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 20;
+  border: 1px solid rgba(99, 167, 255, 0.35);
+  background: rgba(16, 24, 36, 0.9);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.devMenu {
+  position: absolute;
+  top: 48px;
+  left: 10px;
+  z-index: 21;
+  width: 190px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(16, 24, 36, 0.97);
+  border: 1px solid rgba(99, 167, 255, 0.35);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+
+.devMenu.open {
+  display: flex;
+}
+
+.devBtn {
+  border: 1px solid rgba(216, 222, 232, 0.25);
+  background: var(--panel2);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 9px 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.homeScreen {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 54px;
+}
+
+.mealTimer {
+  min-height: 24px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.feedBtn {
+  position: relative;
+  min-width: 156px;
+  min-height: 58px;
+  border: 3px solid var(--tileBorder);
+  border-radius: 999px;
+  background: var(--tile);
+  color: var(--tileText);
+  font-size: 28px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.18);
+}
+
+.feedBtn.overfeed {
+  color: #ffffff;
+  background: var(--dangerDark);
+  border-color: var(--danger);
+  box-shadow: 0 0 18px rgba(255, 59, 48, 0.28);
+}
+
+.feedBadge {
+  position: absolute;
+  right: -12px;
+  top: -10px;
+  min-width: 48px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--panel2);
+  color: var(--text);
+  border: 2px solid var(--tileBorder);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.homeProgressRow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.stageLabel,
+.nextStage {
+  font-size: 16px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.progressTrack {
+  height: 30px;
+  position: relative;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 2px solid rgba(255, 255, 255, 0.24);
+  overflow: hidden;
+}
+
+.progressFill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0%;
+  background: var(--good);
+  transition: width 180ms ease;
+}
+
+.progressText {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  text-shadow: 0 1px 2px #000;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.homePetArea {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 42px;
+}
+
+.speechBubble {
+  position: absolute;
+  right: 54px;
+  bottom: 248px;
+  min-width: 74px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111827;
+  border: 3px solid var(--tileBorder);
+  font-size: 28px;
+}
+
+.speechBubble::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: -12px;
+  width: 22px;
+  height: 22px;
+  background: #ffffff;
+  border-left: 3px solid var(--tileBorder);
+  border-bottom: 3px solid var(--tileBorder);
+  transform: rotate(-25deg);
+}
+
+.bigRaccoon {
+  width: 230px;
+  height: 230px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 124px;
+  line-height: 1;
+}
+
+.bigRaccoon.happy,
+.sessionRaccoon.happy {
+  animation: bounce 420ms ease both;
+}
+
+.bigRaccoon.sad,
+.sessionRaccoon.sad {
+  animation: smallShake 560ms ease both;
+}
+
+.bigRaccoon.explode,
+.sessionRaccoon.explode {
+  animation: explode 900ms ease both;
+}
+
+.homePetName {
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.graveBtn {
+  margin-top: 18px;
+  min-width: 178px;
+}
+
+.playScreen {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.topLives {
+  min-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 }
 
-.logo {
-  height: 40px;
-  width: auto;
-  display: block;
+.lives,
+.resultHearts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
-.title {
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  font-size: clamp(17px, 5vw, 20px);
+.heart {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  user-select: none;
 }
 
 .status {
   text-align: center;
+  color: var(--muted);
+  min-height: 26px;
   font-size: 16px;
-  padding: 6px 0;
-}
-
-.scoreLives {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-
-.score {
   font-weight: 900;
-  font-size: 14px;
-}
-
-.lives {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
-.heart {
-  width: 22px;
-  height: 22px;
-  display: grid;
-  place-items: center;
-  user-select: none;
 }
 
 .solved {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
 
 .groupBar {
-  background: var(--card);
+  background: var(--panel);
   border: 2px solid var(--blue);
   border-radius: 16px;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
 }
 
 .groupTitle {
   font-weight: 900;
-  font-size: 16px;
-  margin-bottom: 6px;
+  font-size: 14px;
+  margin-bottom: 4px;
 }
 
 .groupWords {
-  font-size: 13px;
+  font-size: 12px;
   opacity: 0.95;
 }
 
@@ -132,26 +349,26 @@ body {
 }
 
 .tile {
-  background: #ffffff;
-  color: var(--tileText);
-  border: 4px solid var(--tileBorder);
+  min-height: clamp(48px, 12vw, 64px);
+  display: grid;
+  place-items: center;
+  padding: 8px 6px;
   border-radius: 18px;
-  padding: 10px 6px;
+  border: 4px solid var(--tileBorder);
+  background: var(--tile);
+  color: var(--tileText);
   font-weight: 900;
+  line-height: 1;
   text-align: center;
   cursor: pointer;
   user-select: none;
-  min-height: clamp(46px, 12vw, 64px);
-  display: grid;
-  place-items: center;
-  transition: transform 0.08s ease, border-color 0.12s ease, box-shadow 0.12s ease;
-  line-height: 1;
   overflow: hidden;
+  transition: transform 0.08s ease, border-color 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
   box-shadow: 0 0 16px rgba(255, 255, 255, 0.22);
 }
 
 .tile:hover {
-  border-color: var(--tileHover);
+  border-color: #aab5c4;
   box-shadow: 0 0 22px rgba(255, 255, 255, 0.32);
 }
 
@@ -159,50 +376,253 @@ body {
   transform: scale(0.98);
 }
 
-.tile.disabled {
-  cursor: default;
-  opacity: 0.55;
-  background: #ffffff;
-  color: var(--tileText);
-  border-color: #d6dce5;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.14);
-}
-
 .tile.selected {
   border-color: var(--blue);
-  background: #ffffff;
-  color: var(--tileText);
   box-shadow: 0 0 0 2px rgba(99, 167, 255, 0.45), 0 0 24px rgba(99, 167, 255, 0.35);
+}
+
+.tile.disabled {
+  cursor: default;
+  opacity: 0.56;
+  border-color: var(--tileBorder);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.14);
 }
 
 .controls {
   display: flex;
-  gap: 10px;
   justify-content: center;
-  margin-top: auto;
+  gap: 8px;
+  min-height: 50px;
+  flex-wrap: wrap;
+  margin-top: 4px;
 }
 
 .btn {
   background: var(--tile);
-  border: 2px solid var(--tileBorder);
-  border-radius: 18px;
-  padding: 10px 12px;
-  font-weight: 900;
   color: var(--tileText);
+  border: 3px solid var(--tileBorder);
+  border-radius: 999px;
+  min-height: 48px;
+  min-width: 92px;
+  padding: 10px 14px;
+  font-weight: 900;
+  font-size: 17px;
   cursor: pointer;
-  min-height: 42px;
-  min-width: 84px;
 }
 
 .btn:hover {
-  border-color: var(--tileHover);
+  border-color: #aab5c4;
 }
 
 .btn:disabled {
-  background: #ffffff;
   color: var(--muted);
-  border-color: #d6dce5;
   cursor: default;
+  opacity: 0.7;
+}
+
+.sessionPetArea {
+  margin-top: auto;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sessionRaccoon {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 84px;
+}
+
+.sessionPetName {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.sessionReward {
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  margin-top: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.resultScreen {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 46px;
+  text-align: center;
+}
+
+.resultPuzzlePreview {
+  width: 80%;
+  opacity: 0.72;
+  margin-bottom: 34px;
+}
+
+.resultRevealed {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.resultGroupBar {
+  background: var(--panel);
+  border: 2px solid var(--blue);
+  border-radius: 14px;
+  padding: 8px;
+  text-align: center;
+}
+
+.resultGroupTitle {
+  font-weight: 900;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.resultGroupWords {
+  font-size: 11px;
+  opacity: 0.94;
+}
+
+.resultGroupBar.revealed {
+  opacity: 0.86;
+}
+
+.resultText {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.resultLine {
+  margin-top: 24px;
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.wideBtn {
+  margin-top: 46px;
+  min-width: 240px;
+}
+
+.graveyardScreen,
+.graveDetailScreen {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 54px;
+}
+
+.graveyardTitle {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.graveyardCopy {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 800;
+  min-height: 22px;
+}
+
+.graveGrid {
+  width: min(100%, 390px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.graveSlot {
+  min-height: 78px;
+  border: 2px solid rgba(216, 222, 232, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.graveSlot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.graveSlot.hasGrave {
+  border-color: rgba(99, 167, 255, 0.35);
+}
+
+.graveName {
+  font-size: 11px;
+  font-weight: 900;
+  color: var(--text);
+  margin-top: 3px;
+}
+
+.graveDetailCard {
+  position: relative;
+  width: min(92vw, 420px);
+  min-height: 560px;
+  display: grid;
+  place-items: center;
+}
+
+.graveDetailImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.graveText {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  width: 52%;
+  transform: translateX(-50%);
+  color: #273038;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.15;
+  font-size: clamp(13px, 3.2vw, 17px);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.graveRipHeader,
+.graveLargeName {
+  display: block;
+  font-size: clamp(44px, 11vw, 72px);
+  line-height: 0.95;
+  letter-spacing: 0.03em;
+}
+
+.graveDates {
+  display: block;
+  margin-top: 12px;
+  font-size: clamp(10px, 2.4vw, 13px);
+  line-height: 1.2;
+}
+
+.graveLoving {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(11px, 2.6vw, 14px);
+  line-height: 1.25;
 }
 
 .flash {
@@ -218,116 +638,840 @@ body {
   animation: flash 300ms ease forwards;
 }
 
-@keyframes flash {
-  0% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0.50;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.grid.shake {
-  animation: shake 900ms ease both;
-}
-
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-
-  10% {
-    transform: translateX(-10px);
-  }
-
-  20% {
-    transform: translateX(10px);
-  }
-
-  30% {
-    transform: translateX(-9px);
-  }
-
-  40% {
-    transform: translateX(9px);
-  }
-
-  50% {
-    transform: translateX(-7px);
-  }
-
-  60% {
-    transform: translateX(7px);
-  }
-
-  70% {
-    transform: translateX(-5px);
-  }
-
-  80% {
-    transform: translateX(5px);
-  }
-
-  90% {
-    transform: translateX(-3px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .toast {
   position: absolute;
   left: 50%;
-  top: 84px;
+  top: 76px;
+  z-index: 30;
   transform: translateX(-50%);
+  max-width: 86%;
   padding: 10px 12px;
   border-radius: 14px;
-  background: rgba(16, 24, 36, 0.92);
+  background: rgba(16, 24, 36, 0.94);
   border: 2px solid rgba(38, 48, 64, 0.9);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 14px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 120ms ease;
   text-align: center;
-  z-index: 4;
-  width: max-content;
-  max-width: 90%;
 }
 
 .toast.show {
   opacity: 1;
 }
 
-@media (max-width: 390px) {
-  .outer {
-    padding: 10px;
-  }
+.grid.shake {
+  animation: shake 600ms ease both;
+}
 
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.62);
+}
+
+#nameModal {
+  background: #000;
+}
+
+.modalBackdrop.open {
+  display: flex;
+}
+
+.modalCard {
+  width: min(92vw, 360px);
+  padding: 22px;
+  border-radius: 24px;
+  background: var(--panel);
+  border: 2px solid rgba(99, 167, 255, 0.35);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.42);
+  text-align: center;
+}
+
+.modalTitle {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.modalCopy {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.nameInput {
+  width: 100%;
+  margin-top: 18px;
+  min-height: 48px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  padding: 0 14px;
+  font-size: 17px;
+  font-weight: 900;
+  outline: none;
+}
+
+.modalBtn {
+  margin-top: 18px;
+  width: 100%;
+}
+
+@keyframes flash {
+  0% { opacity: 0; }
+  30% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0) scale(1); }
+  45% { transform: translateY(-8px) scale(1.05); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+@keyframes smallShake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes explode {
+  0% { transform: scale(1); opacity: 1; }
+  55% { transform: scale(1.35); opacity: 1; }
+  100% { transform: scale(0.2); opacity: 0; }
+}
+
+@media (max-width: 420px) {
   .gameArea {
     width: 100%;
-    padding: 10px;
-    gap: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .grid {
     gap: 8px;
   }
 
-  .tile {
-    border-radius: 14px;
-    padding: 8px 4px;
+  .btn {
+    min-width: 88px;
+    font-size: 15px;
   }
 
-  .btn {
-    min-width: 72px;
-    padding: 9px 10px;
+  .bigRaccoon {
+    width: 205px;
+    height: 205px;
+    font-size: 112px;
+  }
+
+  .speechBubble {
+    right: 36px;
+    bottom: 230px;
+  }
+}
+
+/* Adjustments, graveyard + flow polish */
+.homeScreen,
+.playScreen {
+  min-height: min(760px, 96dvh);
+}
+
+.graveBtn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  min-width: 142px;
+  min-height: 42px;
+  font-size: 14px;
+}
+
+.homePetArea {
+  margin-top: auto;
+  padding-bottom: 54px;
+}
+
+.sessionPetArea {
+  margin-top: auto;
+  padding-bottom: 6px;
+}
+
+.speechBubble {
+  opacity: 0;
+  transform: translateY(6px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.speechBubble.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.speechBubble.danger {
+  display: none;
+}
+
+.bouquetBtn {
+  margin-top: 10px;
+  min-width: 96px;
+  font-size: 24px;
+}
+
+.graveHeart {
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+  font-size: 22px;
+  animation: graveHeartFloat 1200ms ease-out forwards;
+}
+
+.screenTransition {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  pointer-events: none;
+  background: #000000;
+  opacity: 0;
+}
+
+.screenTransition.on {
+  animation: screenFade 420ms ease-in-out forwards;
+}
+
+@keyframes screenFade {
+  0% { opacity: 0; }
+  45% { opacity: 0.72; }
+  100% { opacity: 0; }
+}
+
+@keyframes graveHeartFloat {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 12px) scale(0.7);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -58px) scale(1.4);
+  }
+}
+
+/* Raccoon sprite asset support */
+.raccoonImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+
+.raccoonFallback {
+  display: none;
+}
+
+.bigRaccoon .raccoonFallback,
+.sessionRaccoon .raccoonFallback {
+  font-size: inherit;
+  line-height: 1;
+}
+
+
+/* Asset icon sizing. These cap large PNG canvases to the old emoji footprint. */
+.inlineIcon {
+  width: 1.15em;
+  height: 1.15em;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: -0.18em;
+}
+
+.bubbleIcon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+.rewardIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.heartIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.bouquetIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.graveHeart .heartIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.sessionReward {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+
+.assetMissing {
+  opacity: 0;
+}
+
+.raccoonFallback {
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 12px;
+}
+
+
+/* Requested polish updates */
+.graveText {
+  left: calc(50% + 2.2em);
+}
+
+.graveLargeName {
+  font-size: clamp(22px, 5.5vw, 36px);
+  line-height: 1.02;
+  margin-top: 4px;
+}
+
+.graveDates {
+  font-size: clamp(10px, 2.4vw, 13px);
+}
+
+.graveLoving {
+  font-size: clamp(11px, 2.6vw, 14px);
+}
+
+.bouquetBtn,
+.bouquetBtn:hover,
+.bouquetBtn:active,
+.bouquetBtn:focus {
+  width: 210px;
+  height: 210px;
+  min-width: 210px;
+  min-height: 210px;
+  padding: 0;
+  margin-top: 0;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.bouquetIcon {
+  width: 210px;
+  height: 210px;
+  object-fit: contain;
+}
+
+#submitBtn {
+  min-width: 168px;
+  background: var(--blue);
+  color: #ffffff;
+  border-color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#submitBtn:hover {
+  border-color: var(--blue);
+}
+
+#submitBtn:disabled {
+  background: var(--blue);
+  color: rgba(255,255,255,0.62);
+  border-color: var(--blue);
+}
+
+
+/* Current pass, raccoon visible scale and grave text placement */
+.bigRaccoon,
+.sessionRaccoon {
+  overflow: visible;
+  background: transparent;
+  border-radius: 0;
+}
+
+.bigRaccoon {
+  width: 230px;
+  height: 230px;
+}
+
+.sessionRaccoon {
+  width: 150px;
+  height: 150px;
+}
+
+.bigRaccoon .raccoonImage,
+.sessionRaccoon .raccoonImage {
+  transform: scale(5);
+  transform-origin: center center;
+  object-fit: contain;
+}
+
+/* Keep the large raccoon from being clipped by its layout containers. */
+.homePetArea,
+.sessionPetArea {
+  overflow: visible;
+}
+
+/* Grave detail text, re-centered on the stone face and reduced to avoid overflow. */
+.graveDetailCard {
+  width: min(92vw, 420px);
+  min-height: 520px;
+}
+
+.graveText {
+  top: 150px;
+  left: 50%;
+  width: 42%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.graveRipHeader {
+  font-size: clamp(48px, 10vw, 68px);
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.graveLargeName {
+  font-size: clamp(20px, 4.6vw, 30px);
+  line-height: 1;
+  margin-top: 8px;
+  word-break: break-word;
+}
+
+.graveDates {
+  margin-top: 12px;
+  font-size: clamp(7px, 1.85vw, 10px);
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.graveLoving {
+  margin-top: 5px;
+  font-size: clamp(8px, 2vw, 11px);
+  line-height: 1.15;
+}
+
+/* Graveyard background and transparent button pass */
+.graveyardScreen,
+.graveDetailScreen {
+  background: #c88058;
+  color: var(--text);
+  margin: -16px -14px;
+  padding: 54px 14px 16px;
+  width: calc(100% + 28px);
+  min-height: min(760px, 96dvh);
+}
+
+.graveyardScreen .graveyardCopy {
+  color: rgba(232, 238, 246, 0.82);
+}
+
+.graveSlot,
+.graveSlot:hover,
+.graveSlot:active,
+.graveSlot:focus,
+.graveSlot.hasGrave,
+.graveSlot.hasGrave:hover,
+.graveSlot.hasGrave:active,
+.graveSlot.hasGrave:focus {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+.graveyardScreen .btn,
+.graveyardScreen .btn:hover,
+.graveyardScreen .btn:active,
+.graveyardScreen .btn:focus,
+.graveDetailScreen .wideBtn,
+.graveDetailScreen .wideBtn:hover,
+.graveDetailScreen .wideBtn:active,
+.graveDetailScreen .wideBtn:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+  color: var(--text);
+}
+
+.graveDetailScreen .bouquetBtn,
+.graveDetailScreen .bouquetBtn:hover,
+.graveDetailScreen .bouquetBtn:active,
+.graveDetailScreen .bouquetBtn:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Final implementation pass, smaller raccoon scale and graveyard color cleanup */
+.homeScreen {
+  padding-top: 50px;
+}
+
+.homeProgressRow {
+  margin-top: 18px;
+}
+
+.homePetArea {
+  flex: 1;
+  min-height: 330px;
+  justify-content: flex-start;
+  padding-top: 34px;
+  padding-bottom: 54px;
+}
+
+.bigRaccoon {
+  width: 115px;
+  height: 115px;
+}
+
+.bigRaccoon .raccoonImage {
+  transform: scale(2.5);
+  transform-origin: center center;
+}
+
+.homePetName {
+  margin-top: 108px;
+  font-size: 24px;
+}
+
+.speechBubble {
+  right: 84px;
+  bottom: auto;
+  top: 18px;
+}
+
+.graveBtn {
+  bottom: 0;
+}
+
+.sessionPetArea {
+  min-height: 155px;
+  padding-bottom: 0;
+  gap: 26px;
+}
+
+.sessionRaccoon {
+  width: 75px;
+  height: 75px;
+}
+
+.sessionRaccoon .raccoonImage {
+  transform: scale(2.5);
+  transform-origin: center center;
+}
+
+.sessionPetName {
+  font-size: 24px;
+}
+
+.sessionReward {
+  width: 58px;
+  height: 58px;
+  margin-top: 10px;
+}
+
+.graveyardScreen,
+.graveDetailScreen {
+  background: #c87f58;
+}
+
+.graveyardScreen .btn,
+.graveyardScreen .btn:hover,
+.graveyardScreen .btn:active,
+.graveyardScreen .btn:focus,
+.graveDetailScreen .btn,
+.graveDetailScreen .btn:hover,
+.graveDetailScreen .btn:active,
+.graveDetailScreen .btn:focus,
+.graveSlot,
+.graveSlot:hover,
+.graveSlot:active,
+.graveSlot:focus,
+.graveSlot.hasGrave,
+.graveSlot.hasGrave:hover,
+.graveSlot.hasGrave:active,
+.graveSlot.hasGrave:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  outline: none;
+  text-shadow: none;
+}
+
+@media (max-width: 420px) {
+  .homePetArea {
+    min-height: 315px;
+    padding-top: 30px;
+  }
+
+  .bigRaccoon {
+    width: 104px;
+    height: 104px;
+  }
+
+  .homePetName {
+    margin-top: 98px;
+    font-size: 22px;
+  }
+
+  .speechBubble {
+    right: 70px;
+    top: 12px;
+  }
+
+  .sessionPetArea {
+    min-height: 142px;
+  }
+
+  .sessionRaccoon {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+
+/* Final home layout and speech timing polish */
+.homePetArea {
+  padding-top: clamp(118px, 17dvh, 170px);
+  justify-content: flex-start;
+}
+
+.bigRaccoon {
+  margin-top: 0;
+}
+
+.homePetName {
+  margin-top: 108px;
+}
+
+.speechBubble {
+  z-index: 60;
+  top: clamp(100px, 15dvh, 146px);
+  right: clamp(52px, 18vw, 96px);
+}
+
+.speechBubble .bubbleIcon,
+.bubbleIcon {
+  position: relative;
+  z-index: 61;
+}
+
+@media (max-width: 420px) {
+  .homePetArea {
+    padding-top: clamp(104px, 15dvh, 145px);
+  }
+
+  .homePetName {
+    margin-top: 98px;
+  }
+
+  .speechBubble {
+    top: clamp(88px, 13dvh, 124px);
+    right: 62px;
+  }
+}
+
+
+/* Additional implementation pass, feed icon and flipped feed counter */
+#homeFeedText {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.feedButtonTomatoIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: inline-block;
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 70;
+}
+
+.feedBtn.overfeed #homeFeedText {
+  gap: 0;
+}
+
+.feedBadge {
+  white-space: nowrap;
+  min-width: 54px;
+}
+
+.feedBtn.overfeed .feedBadge {
+  min-width: 82px;
+  right: -34px;
+  font-size: 12px;
+}
+
+/* Current implementation pass, repeat toast, foraging raccoon layout, flower counter, look state */
+.playScreen {
+  position: relative;
+  overflow: hidden;
+}
+
+.controls {
+  position: relative;
+  z-index: 10;
+}
+
+.sessionPetArea {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 260px;
+  min-height: 260px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.sessionRaccoon {
+  position: absolute;
+  left: 50%;
+  bottom: -48px;
+  width: 115px;
+  height: 115px;
+  transform: translateX(-50%);
+  overflow: visible;
+  background: transparent;
+  border-radius: 0;
+}
+
+.sessionRaccoon .raccoonImage {
+  transform: scale(2.5);
+  transform-origin: center center;
+  object-fit: contain;
+}
+
+.sessionPetText {
+  display: block;
+}
+
+.sessionPetName {
+  position: absolute;
+  left: 50%;
+  bottom: 220px;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: #a7b0bf;
+  font-size: 22px;
+  font-weight: 900;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.sessionReward {
+  position: absolute;
+  left: 50%;
+  top: -64px;
+  transform: translateX(-50%);
+  width: auto;
+  min-width: 82px;
+  height: 46px;
+  margin: 0;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 900;
+  pointer-events: none;
+  z-index: 12;
+}
+
+.graveDetailScreen {
+  position: relative;
+}
+
+.graveFlowerCount {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  z-index: 8;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+@media (max-width: 420px) {
+  .sessionPetArea {
+    height: 245px;
+    min-height: 245px;
+  }
+
+  .sessionRaccoon {
+    width: 104px;
+    height: 104px;
+    bottom: -44px;
+  }
+
+  .sessionPetName {
+    bottom: 208px;
+    font-size: 20px;
+  }
+
+  .sessionReward {
+    top: -58px;
   }
 }

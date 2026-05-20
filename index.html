@@ -1,43 +1,116 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-  <title>Infinite Connections</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Foraging</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <main class="outer">
     <section class="gameArea" id="gameArea">
-      <div class="header">
-        <div class="logoWrap" id="logoWrap">
-          <img id="logoImg" class="logo" src="logo.png" alt="Infinite Connections logo" />
+      <button class="devToggle" id="devToggle" type="button">Dev</button>
+      <div class="devMenu" id="devMenu" aria-hidden="true">
+        <button class="devBtn" id="devResetSessionBtn" type="button">Reset Session</button>
+        <button class="devBtn" id="devResetRaccoonBtn" type="button">Reset Raccoon</button>
+        <button class="devBtn" id="devResetAllBtn" type="button">Reset All</button>
+        <button class="devBtn" id="devAddProgressBtn" type="button">+25 Progress</button>
+        <button class="devBtn" id="devExplodeBtn" type="button">Explode</button>
+        <button class="devBtn" id="devOverfeedBtn" type="button">Start Overfeed</button>
+      </div>
+
+      <section class="screen homeScreen" id="homeScreen">
+        <div class="mealTimer" id="homeMealTimer">New meal ready</div>
+        <button class="feedBtn" id="homeFeedBtn" type="button">
+          <span id="homeFeedText">Feed</span>
+          <span class="feedBadge" id="homeFeedBadge">0 / 3</span>
+        </button>
+
+        <div class="homeProgressRow">
+          <span class="stageLabel" id="homeStageLabel">Infant</span>
+          <div class="progressTrack">
+            <div class="progressFill" id="homeProgressFill"></div>
+            <div class="progressText" id="homeProgressText">0 / 100</div>
+          </div>
+          <span class="nextStage" id="homeNextStage">???</span>
         </div>
-        <div class="title">INFINITE CONNECTIONS</div>
-      </div>
 
-      <div class="status" id="status">Loading puzzles...</div>
+        <div class="homePetArea">
+          <div class="speechBubble" id="speechBubble"></div>
+          <div class="bigRaccoon" id="homeRaccoonSprite"></div>
+          <div class="homePetName" id="homeRaccoonName">Raccoon</div>
+          <button class="btn graveBtn" id="visitGravesBtn" type="button">Visit loved ones</button>
+        </div>
+      </section>
 
-      <div class="scoreLives">
-        <div class="score" id="score">Score: 0</div>
-        <div class="lives" id="lives"></div>
-      </div>
+      <section class="screen playScreen" id="playScreen">
+        <div class="topLives" id="topLives">
+          <div class="lives" id="lives"></div>
+        </div>
 
-      <div class="solved" id="solved"></div>
+        <div class="status" id="status">Select 4 tiles and submit.</div>
+        <div class="solved" id="solved"></div>
+        <div class="grid" id="grid"></div>
 
-      <div class="grid" id="grid"></div>
+        <div class="controls" id="controls">
+          <button class="btn" id="shuffleBtn" type="button">Shuffle</button>
+          <button class="btn" id="submitBtn" type="button">Submit</button>
+          <button class="btn" id="clearBtn" type="button">Clear</button>
+          <button class="btn hidden" id="nextBtn" type="button">Next</button>
+        </div>
 
-      <div class="controls">
-        <button class="btn" id="submitBtn">Submit</button>
-        <button class="btn" id="clearBtn">Clear</button>
-        <button class="btn" id="nextBtn">Next</button>
-      </div>
+        <div class="sessionPetArea">
+          <div class="sessionRaccoon" id="sessionRaccoonSprite"></div>
+          <div class="sessionPetText">
+            <div class="sessionPetName" id="sessionRaccoonName">Raccoon</div>
+            <div class="sessionReward" id="sessionReward"></div>
+          </div>
+        </div>
+      </section>
 
+      <section class="screen resultScreen" id="resultScreen">
+        <div class="resultPuzzlePreview">
+          <div class="resultHearts" id="resultHearts"></div>
+          <div class="resultRevealed" id="resultMiniGrid"></div>
+        </div>
+
+        <div class="resultText" id="resultText">Foraging over.</div>
+        <div class="resultLine" id="resultFeeds">Feeds remaining: 2</div>
+        <div class="resultLine" id="resultTimer">Meals reset in 01:59:59</div>
+
+        <button class="btn wideBtn" id="resultHomeBtn" type="button">Go back</button>
+      </section>
+
+      <section class="screen graveyardScreen" id="graveyardScreen">
+        <div class="graveyardTitle" id="graveyardTitle">Graveyard</div>
+        <div class="graveyardCopy" id="graveyardCopy">Choose a spot where your raccoon will rest.</div>
+        <div class="graveGrid" id="graveGrid"></div>
+        <button class="btn wideBtn" id="graveyardBackBtn" type="button">Back</button>
+      </section>
+
+      <section class="screen graveDetailScreen" id="graveDetailScreen">
+        <div class="graveFlowerCount" id="graveFlowerCount">Flowers: 0</div>
+        <div class="graveDetailCard">
+          <img class="graveDetailImage" src="Assets/grave.png" alt="Grave" />
+          <div class="graveText" id="graveText"></div>
+        </div>
+        <button class="btn bouquetBtn" id="bouquetBtn" type="button"></button>
+        <button class="btn wideBtn" id="graveDetailBackBtn" type="button">Back to loved ones</button>
+      </section>
+
+      <div class="screenTransition" id="screenTransition"></div>
       <div class="flash" id="flash"></div>
       <div class="toast" id="toast"></div>
     </section>
   </main>
+
+  <div class="modalBackdrop" id="nameModal" aria-hidden="true">
+    <div class="modalCard" role="dialog" aria-modal="true" aria-labelledby="nameModalTitle">
+      <div class="modalTitle" id="nameModalTitle">Name your raccoon</div>
+      <input class="nameInput" id="raccoonNameInput" type="text" maxlength="20" placeholder="Raccoon name" />
+      <button class="btn modalBtn" id="startForagingBtn" type="button">Start</button>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
