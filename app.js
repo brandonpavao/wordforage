@@ -57,6 +57,7 @@ const nameModalEl = document.getElementById("nameModal");
 const raccoonNameInputEl = document.getElementById("raccoonNameInput");
 const startForagingBtn = document.getElementById("startForagingBtn");
 
+/* Dev mode UI disabled. Leave the ids here for later re-enable.
 const devToggle = document.getElementById("devToggle");
 const devMenu = document.getElementById("devMenu");
 const devResetSessionBtn = document.getElementById("devResetSessionBtn");
@@ -65,6 +66,15 @@ const devResetAllBtn = document.getElementById("devResetAllBtn");
 const devAddProgressBtn = document.getElementById("devAddProgressBtn");
 const devExplodeBtn = document.getElementById("devExplodeBtn");
 const devOverfeedBtn = document.getElementById("devOverfeedBtn");
+*/
+const devToggle = null;
+const devMenu = null;
+const devResetSessionBtn = null;
+const devResetRaccoonBtn = null;
+const devResetAllBtn = null;
+const devAddProgressBtn = null;
+const devExplodeBtn = null;
+const devOverfeedBtn = null;
 
 const TIER_COLORS = {
   1: "#7dd87d",
@@ -973,7 +983,7 @@ function triggerRaccoonExplosion() {
 
 function openBurialScreen() {
   graveyardTitleEl.textContent = `${pendingBurial.name} has passed.`;
-  graveyardCopyEl.textContent = "Choose a spot where your raccoon will rest.";
+  graveyardCopyEl.textContent = "Gone too soon.";
   setView("graveyard");
   render();
 }
@@ -981,7 +991,7 @@ function openBurialScreen() {
 function openGraveyard() {
   pendingBurial = null;
   graveyardTitleEl.textContent = "Graveyard";
-  graveyardCopyEl.textContent = "Visit past raccoons.";
+  graveyardCopyEl.textContent = "Gone too soon.";
   setView("graveyard");
   render();
 }
@@ -1200,7 +1210,7 @@ function renderHome() {
   refreshMealCooldown();
 
   const isOverfeed = raccoonState.dailyFeeds >= raccoonState.maxDailyFeeds;
-  const reaction = raccoonState.currentReaction === "look" && !isOverfeed ? "look" : (isOverfeed ? "full" : "idle");
+  const reaction = "idle";
 
   homeMealTimerEl.textContent = raccoonState.dailyFeeds > 0 ? getMealResetText() : "New meal ready";
   homeFeedTextEl.innerHTML = isOverfeed
@@ -1325,6 +1335,8 @@ function render(lastResult = null) {
 }
 
 function openNameModal() {
+  speechBubbleEl.classList.remove("show");
+  speechBubbleEl.innerHTML = "";
   nameModalEl.classList.add("open");
   nameModalEl.setAttribute("aria-hidden", "false");
   raccoonNameInputEl.value = "";
@@ -1562,17 +1574,21 @@ raccoonNameInputEl.addEventListener("keydown", (event) => {
   }
 });
 
-devToggle.addEventListener("click", () => {
-  devMenu.classList.toggle("open");
-  devMenu.setAttribute("aria-hidden", devMenu.classList.contains("open") ? "false" : "true");
-});
+/* Dev mode UI event wiring disabled. Keep this block for later re-enable.
+if (devToggle && devMenu) {
+  devToggle.addEventListener("click", () => {
+    devMenu.classList.toggle("open");
+    devMenu.setAttribute("aria-hidden", devMenu.classList.contains("open") ? "false" : "true");
+  });
+}
 
-devResetSessionBtn.addEventListener("click", resetCurrentSession);
-devResetRaccoonBtn.addEventListener("click", resetRaccoonProgress);
-devResetAllBtn.addEventListener("click", resetAllRaccoonData);
-devAddProgressBtn.addEventListener("click", () => addDevProgress(25));
-devExplodeBtn.addEventListener("click", triggerRaccoonExplosion);
-devOverfeedBtn.addEventListener("click", () => startFeedSession({ isOverfeed: true }));
+if (devResetSessionBtn) devResetSessionBtn.addEventListener("click", resetCurrentSession);
+if (devResetRaccoonBtn) devResetRaccoonBtn.addEventListener("click", resetRaccoonProgress);
+if (devResetAllBtn) devResetAllBtn.addEventListener("click", resetAllRaccoonData);
+if (devAddProgressBtn) devAddProgressBtn.addEventListener("click", () => addDevProgress(25));
+if (devExplodeBtn) devExplodeBtn.addEventListener("click", triggerRaccoonExplosion);
+if (devOverfeedBtn) devOverfeedBtn.addEventListener("click", () => startFeedSession({ isOverfeed: true }));
+*/
 
 window.devResetSession = resetCurrentSession;
 window.devResetRaccoon = resetRaccoonProgress;

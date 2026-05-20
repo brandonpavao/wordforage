@@ -63,6 +63,7 @@ body {
   display: none !important;
 }
 
+/* Dev mode UI disabled. Keep this block for later re-enable.
 .devToggle {
   position: absolute;
   top: 10px;
@@ -106,6 +107,7 @@ body {
   font-weight: 900;
   cursor: pointer;
 }
+*/
 
 .homeScreen {
   flex-direction: column;
@@ -1474,4 +1476,35 @@ body {
   .sessionReward {
     top: -58px;
   }
+}
+
+
+/* Current pass, keep happy and sad sprites locked to the same x/y position. */
+.bigRaccoon.happy,
+.bigRaccoon.sad,
+.sessionRaccoon.happy,
+.sessionRaccoon.sad {
+  animation: none !important;
+}
+
+.bigRaccoon.happy .raccoonImage,
+.bigRaccoon.sad .raccoonImage,
+.bigRaccoon.idle .raccoonImage,
+.bigRaccoon.full .raccoonImage,
+.sessionRaccoon.happy .raccoonImage,
+.sessionRaccoon.sad .raccoonImage,
+.sessionRaccoon.idle .raccoonImage,
+.sessionRaccoon.full .raccoonImage {
+  transform: scale(2.5);
+  transform-origin: center center;
+}
+
+
+/* Name modal should cover home speech items completely. */
+.modalBackdrop {
+  z-index: 100;
+}
+
+#nameModal.open ~ .speechBubble {
+  display: none;
 }
