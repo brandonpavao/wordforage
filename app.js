@@ -95,6 +95,15 @@ const ASSET_PATHS = {
   bouquet: "Assets/flowers.webp",
   grave: "Assets/grave.png",
   hole: "Assets/hole.png",
+  sfx: {
+    feed: "sfx/feed.mp3",
+    wordSelection: "sfx/word-selection.mp3",
+    wrongGuess: "sfx/wrong-guess.mp3",
+    lostLevel: "sfx/lost-level.mp3",
+    correctGuess: "sfx/correct-guess.mp3",
+    wonLevel: "sfx/won-level.mp3",
+    shuffle: "sfx/shuffle.mp3",
+  },
   raccoon: {
     idle: "Assets/Raccoon/idle.png",
     full: "Assets/Raccoon/full.png",
@@ -203,6 +212,25 @@ function showToast(message) {
   toastEl.classList.add("show");
   window.clearTimeout(showToast._t);
   showToast._t = window.setTimeout(() => toastEl.classList.remove("show"), 1200);
+}
+
+function playSfx(name, volume = 1) {
+  const src = ASSET_PATHS.sfx[name];
+
+  if (!src) {
+    return;
+  }
+
+  const audio = new Audio(src);
+  audio.volume = Math.max(0, Math.min(1, volume));
+  audio.play().catch(() => {});
+}
+
+function preloadSfx() {
+  Object.values(ASSET_PATHS.sfx).forEach((src) => {
+    const audio = new Audio(src);
+    audio.preload = "auto";
+  });
 }
 
 
@@ -950,6 +978,8 @@ function handleHomeFeed() {
     return;
   }
 
+  playSfx("feed");
+
   if (raccoonState.dailyFeeds >= raccoonState.maxDailyFeeds) {
     startFeedSession({ isOverfeed: true });
     return;
@@ -1169,6 +1199,8 @@ function shuffleCurrentBoard() {
   if (gameOver || puzzleCompleteWaitingForNext || !raccoonState.name) {
     return;
   }
+
+  playSfx("shuffle");
 
   const activeIndices = [];
   const activeWords = [];
@@ -1435,12 +1467,27 @@ function addDevProgress(amount) {
 }
 
 function onTileClick(index) {
+  const previousSelection = selected.slice();
   toggleSelect(index);
+
+  if (previousSelection.join("|") !== selected.join("|")) {
+    playSfx("wordSelection");
+  }
+
   render();
 }
 
 function onSubmit() {
   const result = submitGuess();
+
+  if (result.status === "puzzle_complete") {
+    playSfx("wonLevel");
+  } else if (result.status === "correct") {
+    playSfx("correctGuess");
+  } else if (result.status === "incorrect" || result.status === "one_away") {
+    playSfx(currentSession.ended && !won ? "lostLevel" : "wrongGuess");
+  }
+
   render(result);
 }
 
@@ -1520,6 +1567,7 @@ function startTimer() {
 
 async function boot() {
   ensureTiles();
+  preloadSfx();
   loadRaccoonState();
   loadGraveyardState();
   refreshMealCooldown();
