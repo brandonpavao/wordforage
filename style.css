@@ -63,6 +63,32 @@ body {
   display: none !important;
 }
 
+.coverScreen {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: min(760px, 96dvh);
+  margin: -16px -14px;
+  padding: 0 14px 104px;
+  width: calc(100% + 28px);
+  background: #000000 url("cover.png") center center / cover no-repeat;
+}
+
+.coverActions {
+  width: min(78%, 300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.coverBtn {
+  width: 100%;
+  min-height: 54px;
+  font-size: 20px;
+}
+
 /* Dev mode UI disabled. Keep this block for later re-enable.
 .devToggle {
   position: absolute;
@@ -763,6 +789,14 @@ body {
 }
 
 @media (max-width: 420px) {
+  .coverScreen {
+    padding-bottom: 84px;
+  }
+
+  .coverActions {
+    width: min(84%, 280px);
+  }
+
   .gameArea {
     width: 100%;
     padding-left: 10px;
@@ -1007,7 +1041,7 @@ body {
 }
 
 #submitBtn {
-  min-width: 168px;
+  min-width: 128px;
   background: var(--blue);
   color: #ffffff;
   border-color: var(--blue);
@@ -1507,4 +1541,65 @@ body {
 
 #nameModal.open ~ .speechBubble {
   display: none;
+}
+
+/* Mobile layout fix, lock foraging labels to the raccoon container instead of the controls. */
+.sessionPetArea {
+  z-index: 6;
+}
+
+.sessionPetText {
+  position: absolute;
+  left: 50%;
+  bottom: 174px;
+  transform: translateX(-50%);
+  width: min(82%, 260px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+  z-index: 14;
+}
+
+.sessionPetName {
+  position: static;
+  transform: none;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  color: #a7b0bf;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.sessionReward {
+  position: static;
+  transform: none;
+  width: auto;
+  min-width: 82px;
+  height: 46px;
+  margin: 0;
+}
+
+@media (max-width: 420px) {
+  .sessionPetText {
+    bottom: 160px;
+    gap: 6px;
+  }
+
+  .sessionPetName {
+    font-size: 20px;
+  }
+
+  .sessionReward {
+    height: 42px;
+    min-width: 76px;
+    font-size: 18px;
+  }
 }

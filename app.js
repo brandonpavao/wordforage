@@ -3,6 +3,7 @@
    Static GitHub Pages version with raccoon foraging.
 -------------------------------------------------- */
 
+const coverScreenEl = document.getElementById("coverScreen");
 const homeScreenEl = document.getElementById("homeScreen");
 const playScreenEl = document.getElementById("playScreen");
 const resultScreenEl = document.getElementById("resultScreen");
@@ -56,6 +57,8 @@ const toastEl = document.getElementById("toast");
 const nameModalEl = document.getElementById("nameModal");
 const raccoonNameInputEl = document.getElementById("raccoonNameInput");
 const startForagingBtn = document.getElementById("startForagingBtn");
+const coverPlayBtn = document.getElementById("coverPlayBtn");
+const coverSoundBtn = document.getElementById("coverSoundBtn");
 
 /* Dev mode UI disabled. Leave the ids here for later re-enable.
 const devToggle = document.getElementById("devToggle");
@@ -86,6 +89,7 @@ const TIER_COLORS = {
 const MISTAKES_ALLOWED = 3;
 const RACCOON_STORAGE_KEY = "infiniteConnectionsRaccoonStateV4";
 const GRAVEYARD_STORAGE_KEY = "infiniteConnectionsGraveyardV1";
+const SOUND_STORAGE_KEY = "infiniteConnectionsSoundEnabledV1";
 const MEAL_COOLDOWN_MS = 2 * 60 * 60 * 1000;
 
 const ASSET_PATHS = {
@@ -136,7 +140,7 @@ let mistakesUsed = 0;
 let gameOver = false;
 let won = false;
 let puzzleCompleteWaitingForNext = false;
-let currentView = "home";
+let currentView = "cover";
 let timerInterval = null;
 let raccoonState = getDefaultRaccoonState();
 let currentSession = getDefaultSession();
@@ -154,6 +158,7 @@ let raccoonReactionTimeout = null;
 let lookReactionTimeout = null;
 let sessionSpeechTomatoesShown = 0;
 let sessionHiKateShown = false;
+let soundEnabled = window.localStorage.getItem(SOUND_STORAGE_KEY) !== "false";
 
 function normalizeWord(word) {
   return String(word || "").trim().toUpperCase();
@@ -215,6 +220,10 @@ function showToast(message) {
 }
 
 function playSfx(name, volume = 1) {
+  if (!soundEnabled) {
+    return;
+  }
+
   const src = ASSET_PATHS.sfx[name];
 
   if (!src) {
@@ -231,6 +240,31 @@ function preloadSfx() {
     const audio = new Audio(src);
     audio.preload = "auto";
   });
+}
+
+function updateSoundButton() {
+  if (!coverSoundBtn) {
+    return;
+  }
+
+  coverSoundBtn.textContent = soundEnabled ? "Sound: On" : "Sound: Off";
+}
+
+function toggleSound() {
+  soundEnabled = !soundEnabled;
+  window.localStorage.setItem(SOUND_STORAGE_KEY, soundEnabled ? "true" : "false");
+  updateSoundButton();
+}
+
+function enterGameFromCover() {
+  setView("home");
+  render();
+
+  if (!raccoonState.name || raccoonState.isExploded) {
+    openNameModal();
+  }
+
+  startSpeechBubbleTimer();
 }
 
 
@@ -732,6 +766,7 @@ function setView(view) {
   }
 
   currentView = view;
+  coverScreenEl.classList.toggle("active", view === "cover");
   homeScreenEl.classList.toggle("active", view === "home");
   playScreenEl.classList.toggle("active", view === "play");
   resultScreenEl.classList.toggle("active", view === "result");
@@ -1571,7 +1606,7 @@ async function boot() {
   loadRaccoonState();
   loadGraveyardState();
   refreshMealCooldown();
-  setView("home");
+  setView("cover");
   submitBtn.disabled = true;
   clearBtn.disabled = true;
 
@@ -1592,18 +1627,15 @@ async function boot() {
     puzzlePointer = Math.floor(Math.random() * puzzleOrder.length);
 
     render();
-
-    if (!raccoonState.name || raccoonState.isExploded) {
-      openNameModal();
-    }
-
+    updateSoundButton();
     startTimer();
-    startSpeechBubbleTimer();
   } catch (error) {
     showToast(error.message);
   }
 }
 
+coverPlayBtn.addEventListener("click", enterGameFromCover);
+coverSoundBtn.addEventListener("click", toggleSound);
 homeFeedBtn.addEventListener("click", handleHomeFeed);
 visitGravesBtn.addEventListener("click", openGraveyard);
 shuffleBtn.addEventListener("click", shuffleCurrentBoard);
