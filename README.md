@@ -1,38 +1,33 @@
-# Infinite Connections Pet Feed
+# Word Forage
 
-A Connections-style word puzzle game with a pet care twist, where each round helps feed, grow, or lose your raccoon companion.
+A mobile word puzzle game where a raccoon forages for tomatoes by solving word groups.
 
-This project started as a simple clone of the NYT Connections format, then grew into a more personal game loop. Instead of only solving word groups, the player also cares for a raccoon across daily feeding sessions. Wins reward the raccoon. Losses affect its health. The goal was to make the puzzle system feel more alive through progression, reactions, and small emotional stakes.
+Word Forage started as a twist on a word connection game, then grew into a pet-feeding loop. The player solves word puzzles, earns tomatoes, feeds a raccoon, and builds progress through simple daily interaction. The goal is to make a familiar puzzle format feel more personal through a small mascot system, visual rewards, and light progression.
 
 ## Overview
 
-Infinite Connections Pet Feed combines a 16-word category puzzle with a lightweight pet survival system. Players solve word groups, earn food rewards, and feed their raccoon through the day.
+Word Forage combines word sorting, puzzle solving, and virtual pet care. Players select words, submit guesses, and try to discover hidden groups. Correct answers reward the raccoon with tomatoes. Failed attempts affect the forage run, giving each puzzle session a small sense of risk.
 
-The raccoon reacts to correct guesses, wrong guesses, feeding progress, and death states. Each raccoon has a name, a short life cycle, and a graveyard record if it does not survive. The result is a word game with memory, consequence, and character.
+The game is designed for mobile screens first. The raccoon stays central to the experience, with title art, feeding states, graveyard history, tomato rewards, and playful reactions tied into the puzzle loop.
 
 ## Features
 
-* 16-word Connections-style puzzle board
-* Four hidden word groups per puzzle
-* Correct group detection and solved-group stacking
-* Wrong guess feedback with visual reaction states
-* Raccoon companion displayed below the word tiles
-* Daily feeding system
-* Four feed attempts per day
-* Health loss tied to failed forage sessions
-* Food reward shown after successful play
-* Raccoon naming modal
-* Growth tier progress bar
-* Raccoon reaction sprites for idle, happy, sad, full, and death states
-* Graveyard system for past raccoons
-* Browser-based persistence planned for saved raccoon data
-* Static HTML, CSS, and JavaScript structure for GitHub Pages hosting
+- Mobile-first title screen with raccoon and tomato garden theme
+- Word grouping puzzle system inspired by connection-style games
+- Tomato reward counter tied to player progress
+- Raccoon mascot with idle, happy, sad, and full reaction states
+- Feeding loop where puzzle rewards support raccoon growth
+- Daily feed limit to encourage short return sessions
+- Graveyard system for past raccoons
+- Local browser persistence planned so progress does not reset
+- Sound effects for selection, feed, shuffle, correct guesses, wrong guesses, wins, and losses
+- Clean button layout designed around mobile auto-layout issues
 
 ## What I Learned
 
-* How to turn a simple puzzle clone into a larger game loop
-* How to connect player performance to character progression
-* How to manage UI state across modals, puzzle screens, and pet screens
-* How to plan sprite states around gameplay feedback
-* How local browser storage can support persistent game data
-* How small emotional mechanics make repeated play feel less disposable
+- How to turn a simple word puzzle into a stronger game loop
+- How mascot feedback can make small actions feel more rewarding
+- How mobile layout constraints affect UI placement and scaling
+- How local storage can support persistent browser-based progression
+- How sound, animation, and visual feedback improve puzzle clarity
+- How to structure a small game project around repeatable user actions
